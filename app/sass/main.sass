@@ -1,0 +1,584 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: $green
+
+::selection
+	color: $white
+	background-color: $green
+
+body
+	font-size: 14px
+	background: $background-dark
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: $default-font
+	color: $white
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+a, a:hover
+	text-decoration: none
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+span.green
+	color: $green
+span.orange
+	color: $orange
+h1, h2, h3, h4
+	font-family: NevisBold
+body::-webkit-scrollbar
+	display: none
+.burder-mnu
+	display: none
+.mobile-mnu
+	display: none
+
+
+.header-bcg-pattern
+	position: absolute
+	z-index: 10
+	width: 130vw
+	height: 200vh
+	max-height: 1000px
+	left: -12vw
+	img
+		width: 100%
+		height: 100%
+header
+	position: relative
+	z-index: 999
+	nav
+		margin-top: 60px
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		font-weight: light
+		.logo
+			height: 42px
+			width: 40vw
+			img
+				height: 100%
+		ul
+			margin: 0
+			display: flex
+			justify-content: space-between
+			li
+				list-style-type: none
+				padding-bottom: 2px
+				&:hover
+					border-bottom: 1px $white solid
+					padding-bottom: 1px
+					cursor: pointer
+				&:last-child a
+					padding: 8px 35px
+					border: 1px $white solid
+					border-radius: 30px
+					box-shadow: 0px 0px 2px $white, 0px 0px 4px $white
+					transition: .2s
+					width: 500px
+					&:hover
+						background-color: $white
+						color: $background-dark
+						transition: .2s
+						cursor: pointer
+						box-shadow: 0px 0px 2px $white, 0px 0px 8px $white
+				&:last-child
+					width: 140px
+					border-bottom: 0px
+					&:hover
+						color: $background-dark
+						font-weight: bold
+.left-side
+	width: 37vw
+	.main-text
+		margin-top: 80px
+		line-height: 76px
+		h1
+			font-size: 66px
+		p
+			line-height: 23px
+			font-size: 16px
+			width: 460px
+			letter-spacing: 0.2px
+			margin-left: 5px
+	.button-and-social
+		margin-top: 80px
+		display: flex
+		flex-direction: column
+		width: 300px
+		align-items: center
+		.social-links
+			width: 200px
+			margin-top: 54px
+			display: flex
+			justify-content: space-between
+			margin-top: 60px
+			img
+				height: 16px
+a.get-obligation-btn
+	font-size: 16px
+	padding: 13px 40px
+	color: $green
+	box-shadow: 0px 0px 2px $green, 0px 0px 4px $green
+	border: 2px solid $green
+	border-radius: 30px
+	margin-left: 15px
+	transition: .2s
+	width: 300px
+	text-align: center
+	&:hover
+		background-color: $green
+		color: $background-dark
+		box-shadow: 0px 0px 2px $green, 0px 0px 0px $green, 0px 0px 10px $green
+		transition: .2s
+		font-weight: bold
+
+.right-side
+	.header-illustration-wrapper
+		width: 42vw
+		max-width: 600px
+		margin-top: 20px
+		img
+			width: 100%
+.your-partner-pattern-wrapper
+	position: absolute
+	z-index: 3
+	opacity: .5
+	width: 105vw
+	left: 0vw
+	top: 650px
+	img
+		width: 100%
+		height: 80%
+section.your-partner
+	position: relative
+	z-index: 997
+	margin-top: 130px
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 100%
+	flex-direction: column
+	h1
+		font-size: 66px
+	.info
+		display: flex
+		margin-top: 90px
+		.img-wrapper
+			max-width: 90%
+			img
+				width: 100%
+		p
+			max-width: 400px
+			font-size: 15px
+			line-height: 22px
+			letter-spacing: 0.05em
+			opacity: .9
+			margin-top: 150px
+			&.next
+				margin-top: 75px
+	.row
+		&:nth-child(3) .info
+			margin-top: 120px
+			.img-wrapper
+				max-width: 100%
+		&:nth-child(4) .info
+			margin-top: 120px
+			.img-wrapper
+				max-width: 80%
+				margin-left: 50px
+			p
+				margin-left: 20px
+.pain-points
+	position: relative
+	z-index: 996
+	max-height: 100vh
+	margin-top: 200px
+	p
+		font-size: 14px
+		line-height: 22px
+		text-align: center
+		letter-spacing: 0.04em
+		width: 450px
+	h1
+		text-align: center
+		font-size: 62px
+	.row
+		height: 70vh
+		.col-md-12
+			display: flex
+			align-items: center
+			justify-content: center
+			a
+				color: $orange
+				box-shadow: 0px 0px 2px $orange, 0px 0px 4px $orange
+				border-color: $orange
+				&:hover
+					background-color: $orange
+					color: $background-dark
+					box-shadow: 0px 0px 2px $orange, 0px 0px 0px $orange, 0px 0px 10px $orange
+.we-offer-services
+	margin-top: 140px
+	padding-bottom: 80px
+	position: relative
+	z-index: 999
+	.col-md-3
+		padding: 20px 20px
+		height: 200px
+		.one
+			background-image: url(../img/_src/we-offer/1.png)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: left
+		.two
+			background-image: url(../img/_src/we-offer/2.png)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: left
+		.three
+			background-image: url(../img/_src/we-offer/3.png)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: left
+		.four
+			background-image: url(../img/_src/we-offer/4.png)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: left
+		.five
+			background-image: url(../img/_src/we-offer/5.png)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: left
+		.six
+			background-image: url(../img/_src/we-offer/6.png)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: left
+		.seven
+			background-image: url(../img/_src/we-offer/7.png)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: left
+		.eight
+			background-image: url(../img/_src/we-offer/8.png)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: left
+		.nine
+			background-image: url(../img/_src/we-offer/9.png)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: left
+		.service-card
+			height: 100%
+			padding-left: 40px
+			transition: .25s
+			border: transparent 1px solid
+			border-radius: 30px
+			cursor: pointer
+			.icon-wrapper
+				width: 48px
+				padding-top: 40px
+				transition: .5s
+				img
+					width: 100%
+			.service-title
+				font-size: 21px
+				margin-top: 21px
+			&:hover
+				transition: .25s
+				border: $orange 1px solid
+				border-radius: 30px
+				box-shadow: 0px 0px 2px $orange, 0px 0px 0px $orange, 0px 0px 10px $orange
+			.service-description
+				display: none
+				transition: .5s
+				font-size: 13px
+				width: 90%
+				opacity: .8
+				letter-spacing: 0.03em
+	.row
+		.col-md-6
+			h2
+				font-size: 54px
+				margin-left: 40px
+				margin-top: 40px
+				transition: .2s
+				span
+					transition: .3s
+	.read-more-services
+		display: flex
+		align-items: center
+		justify-content: center
+		cursor: pointer
+		p
+			font-size: 21px
+			font-family: NevisBold
+			letter-spacing: .05em
+			&:hover span
+				border-bottom: $orange 2px solid
+
+.outsouce-needs
+	height: 100vh
+	position: relative
+	.needs-img-wrapper
+		height: 120vh
+		width: 110vw
+		left: -10vw
+		position: absolute
+		z-index: 5
+		opacity: .5
+		top: -70px
+		img
+			width: 100%
+			height: 100%
+	.row
+		position: relative
+		z-index: 995
+		margin-top: 60px
+		.col-md-6:first-child
+			img
+				width: 90%
+				height: 100%
+		.col-md-6:last-child
+			margin-left: 0px
+			h1
+				margin-top: 20px
+				font-size: 66px
+			p
+				margin-top: 66px
+				width: 464px
+				line-height: 20px
+				font-size: 14px
+				letter-spacing: 0.02em
+				margin-bottom: 66px
+				margin-left: 3px
+			a
+				color: $orange
+				box-shadow: 0px 0px 2px $orange, 0px 0px 4px $orange
+				border-color: $orange
+				margin-left: 7px
+				&:hover
+					background-color: $orange
+					color: $background-dark
+					box-shadow: 0px 0px 2px $orange, 0px 0px 0px $orange, 0px 0px 10px $orange
+.we-make-pattern-wrapper
+	position: relative
+	z-index: 8
+	left: -800px
+	top: -952px
+	img
+		opacity: .2
+section.we-make
+	max-height: 500px
+	.col-lg-4
+		h1
+			font-size: 54px
+			width: 385px
+		.arrows
+			height: 29px
+			display: flex
+			align-items: center
+			margin-top: 100px
+			position: relative
+			z-index: 990
+			cursor: pointer
+			span
+				height: 28px
+				display: flex
+				&:first-child
+					align-items: flex-end
+					height: 34px
+					opacity: 0
+				&:last-child
+					margin-left: 31px
+					align-items: flex-start
+					transform: rotate(180deg)
+					transform: scale(-1, 1)
+
+	.row
+		position: relative
+		z-index: 994
+		.we-make-cards
+			margin-left: 136px
+			display: flex
+			position: absolute
+			left: 0px
+			z-index: 9
+			.wm-card
+				position: relative
+				width: 250px
+				height: 328px
+				background-image: url('../img/_src/wm-pattern.svg')
+				background-size: 3220px
+				border-radius: 30px
+				padding-top: 46px
+				padding-left: 26px
+				margin-right: 52px
+				border: 0px $green solid
+				box-shadow: 0px 0px 0px $green, 0px 0px 0px $green, 0px 0px 0px $green
+				h4
+					font-family: MyriadPro
+					font-weight: 700
+					font-size: 34px
+					margin-top: 28px
+				p
+					font-size: 14px
+					line-height: 21px
+				.icon-wrapper
+					width: 84px
+					height: 66px
+					img
+						width: 100%
+						height: 100%
+				&:first-child
+					background-position-x: -1289px
+					background-position-y: -682px
+					border: 2px $green solid
+					box-shadow: 0px 0px 2px $green, 0px 0px 0px $green, 0px 0px 10px $green
+				&:nth-child(2)
+					background-position-x: -1589px
+					background-position-y: -682px
+				&:nth-child(3)
+					background-position-x: -1889px
+					background-position-y: -682px
+				&:nth-child(4)
+					background-position-x: -2189px
+					background-position-y: -682px
+				&:nth-child(5)
+					background-position-x: -2489px
+					background-position-y: -682px
+				&:nth-child(6)
+					background-position-x: -2789px
+					background-position-y: -682px
+				&:nth-child(7)
+					background-position-x: -3089px
+					background-position-y: -682px
+				&:nth-child(8)
+					background-position-x: -3389px
+					background-position-y: -682px
+				&:nth-child(9)
+					background-position-x: -3689px
+					background-position-y: -682px
+
+.subscribe
+	position: relative
+	z-index: 990
+	display: flex
+	align-items: center
+	justify-content: center
+	max-height: 400px
+	height: 100vh
+	margin-bottom: 100px
+	h2
+		font-size: 34px
+		margin-bottom: 64px
+		text-align: center
+	form
+		display: flex
+		justify-content: flex-end
+		input
+			background-color: transparent
+			border: $white 1px solid
+			border-radius: 30px
+			height: 45px
+			width: 395px
+			color: $white
+			padding-left: 40px
+			font-size: 16px
+			transition: .2s
+			&:focus
+				border: $green 1px solid
+				box-shadow: 0px 0px 5px $green
+			&:hover
+				box-shadow: 0px 0px 2px $green, 0px 0px 10px $green
+				border-color: $green
+		&:hover span
+			color: $green
+	button
+		background: $green
+		color: $background-dark
+		border: none
+		height: 45px
+		width: 180px
+		border-radius: 30px
+		font-weight: bold
+		font-size: 16px
+		transition: .2s
+		&:hover
+			box-shadow: 0px 0px 2px $green, 0px 0px 10px $green
+			transition: .2s
+		&:active
+			background: $background-dark
+			color: $green
+	.form-label
+		position: absolute
+		top: -10px
+		left: 50px
+		background: $background-dark
+		width: 50px
+		display: flex
+		justify-content: center
+
+footer
+	ul
+		display: flex
+		justify-content: space-between
+		padding: 0
+		margin-bottom: 20px
+		li
+			list-style-type: none
+			font-size: 18px
+			ul
+				display: flex
+				flex-direction: column
+				margin-top: 20px
+				li
+					font-size: 14px
+					opacity: .7
+					margin-bottom: 5px
+			p
+				display: flex
+				margin-top: 20px
+				font-size: 14px
+				opacity: .7
+				line-height: 22px
+	.copyright
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 60px
+		.logo
+			height: 32px
+			img
+				height: 100%
+		.social
+			display: flex
+			width: 100px
+			justify-content: space-between
+
+@import "media"
+// Always at the end

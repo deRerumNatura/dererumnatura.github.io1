@@ -1,0 +1,401 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// 1200px
++media-breakpoint-down(lg)
+    html, body
+        overflow-x: hidden
+    body header .row .right-side .header-illustration-wrapper
+        width: 100%
+    .left-side .main-text h1
+        font-size: 48px
+        line-height: 54px
+    .outsouce-needs .row .col-md-6:first-child img
+        height: auto
+    .outsouce-needs .row .col-md-6:last-child h1
+        font-size: 48px
+    .outsouce-needs .row .col-md-6:last-child p
+        margin-top: 40px
+    .eight p
+        word-wrap: break-word
+        width: 92px
+    .we-offer-services .col-md-3 .service-card
+        padding-left: 20px
+        height: 210px
+    .we-offer-services .row
+        height: 240px
+    .one
+        background-position-x: -78px
+// 992px
++media-breakpoint-down(md)
+    .we-offer-services .col-md-3 .service-card
+        height: 160px
+    .we-offer-services .row
+        height: 180px
+    html, body
+        overflow-x: hidden
+    .left-side .main-text h1
+        font-size: 40px
+        line-height: 50px
+    .left-side .main-text p
+        font-size: 12px
+        width: 360px
+    .right-side .header-illustration-wrapper
+        margin-top: 60px
+        margin-left: 10px
+        width: 390px
+    section.your-partner h1
+        font-size: 40px
+    section.your-partner .info p
+        margin-top: 50px
+        font-size: 12px
+        line-height: 20px
+    .pain-points h1
+        font-size: 36px
+    .we-offer-services .col-md-3 .service-card .icon-wrapper
+        width: 27px
+    .we-offer-services .col-md-3 .service-card .service-title
+        font-size: 16px
+    .we-offer-services .col-md-3 .service-card
+        padding-left: 20px
+    body .we-offer-services .row .col-md-6 h2, .we-offer-services .row .col-md-6 h2 span
+        font-size: 35px!important
+    body .we-offer-services .row .col-md-6 h2
+        margin-top: 78px
+    .we-offer-services .read-more-services p
+        font-size: 16px
+    .we-offer-services .col-md-3 .service-card:hover p
+        font-size: 10px
+    .outsouce-needs .row .col-md-6:last-child h1
+        font-size: 30px
+    .outsouce-needs .row .col-md-6:last-child p
+        font-size: 12px
+        width: 100%
+    .outsouce-needs .row .col-md-6:first-child img
+        margin-top: 60px
+    section.we-make .row .we-make-cards
+        flex-direction: column
+        position: relative
+    section.we-make .row
+        display: flex
+        flex-direction: column
+    section.we-make .col-lg-4 .arrows
+        display: none
+    section.we-make .col-lg-4 h1
+        width: auto
+        font-size: 35px
+        text-align: center
+    section.we-make .row .we-make-cards
+        margin-left: 0
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        margin-top: 50px
+    section.we-make
+        max-height: 100%
+    section.we-make .row .we-make-cards .wm-card
+        border: 0px!important
+        box-shadow: 0px 0px 0px transparent!important
+        width: 200px
+        height: 275px
+        margin: 0
+        position: relative
+        overflow: hidden
+        margin-bottom: 20px
+        background-image: url('../img/_src/wm-pattern-mob.svg')
+        background-size: 1500px
+        background-position-x: -1800px
+        &:first-child
+            background-position-x: -1800px
+            background-position-y: -682px
+        &:nth-child(2)
+            background-position-x: -2022px
+            background-position-y: -682px
+        &:nth-child(3)
+            background-position-x: -2244px
+            background-position-y: -682px
+        &:nth-child(4)
+            background-position-x: -1800px
+            background-position-y: -1011px
+        &:nth-child(5)
+            background-position-x: -2022px
+            background-position-y: -1011px
+        &:nth-child(6)
+            background-position-x: -2244px
+            background-position-y: -1011px
+        &:nth-child(7)
+            background-position-x: -1800px
+            background-position-y: -1294px
+        &:nth-child(8)
+            background-position-x: -2022px
+            background-position-y: -1294px
+        &:nth-child(9)
+            background-position-x: -2244px
+            background-position-y: -1294px
+    section.we-make .row .we-make-cards .wm-card .icon-wrapper
+        width: 60px
+    section.we-make .row .we-make-cards .wm-card h4
+        font-size: 20px
+    .outsouce-needs
+        max-height: 500px
+    .we-make-pattern-wrapper
+        display: none
+            
+        
+// 768px
++media-breakpoint-down(sm)
+    header nav
+        display: flex
+        flex-direction: row-reverse
+        ul
+            display: none
+    .burder-mnu
+        display: flex
+        flex-direction: column
+        position: absolute
+        z-index: 1001
+        right: 60px
+        top: 80px
+        span
+            height: 2px
+            width: 50px
+            margin: 3px 0
+            background: $white
+    .mobile-mnu
+        display: flex
+        height: 100vh
+        position: absolute
+        width: 100vw
+        left: -100vw
+        z-index: 1000
+        background-color: $background-dark
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        ul
+            margin-top: 10vh
+            display: flex
+            flex-direction: column
+            li
+                list-style-type: none
+                font-size: 54px
+                margin: 40px 0
+        .logo-mobile
+            height: 42px
+            width: 40vw
+            position: absolute
+            top: 80px
+            left: 60px
+            img
+                height: 100%
+        .social
+            margin-top: 5vh
+            display: flex
+            width: 150px
+            flex-wrap: wrap
+            justify-content: space-between
+            img
+                height: 40px
+                margin-right: 20px
+                margin-bottom: 40px
+    .left-side .main-text h1
+        font-size: 54px
+        line-height: 61px
+        text-align: center
+    .left-side .main-text
+        display: flex
+        align-items: center
+        flex-direction: column
+        margin-top: 0
+        p
+            font-size: 16px
+            margin-top: 50px
+            text-align: center
+            width: 80%
+    .left-side
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 100px
+    .left-side .button-and-social .social-links
+        display: none
+    section.your-partner .info
+        display: flex
+        flex-direction: column
+    section.your-partner .info .img-wrapper
+        max-width: 100%
+    section.your-partner .info p
+        margin-top: 0
+        max-width: 100%
+        font-size: 16px
+        line-height: 25px
+        margin-bottom: 40px
+    section.your-partner .row:nth-child(3) .info
+        height: 100%
+        flex-direction: column-reverse
+        p
+            margin-top: 40px
+    .we-offer-services .row
+        height: 100%
+    .we-offer-services .col-md-3 .service-card
+        height: 220px
+    .we-offer-services .col-md-3
+        height: auto
+    .we-offer-services .row .col-md-6 h2 span, body .we-offer-services .row .col-md-6 h2
+        margin-bottom: 40px
+    .we-offer-services .col-md-3 .service-card
+        background-image: url(../img/_src/we-offer-mob.svg)
+        background-size: 1500px
+        background-position-x: -203px
+        background-position-y: -961px
+    .we-offer-services .col-md-3
+        .two
+            background-position-x: -488px
+            background-position-y: -961px
+        .three
+            background-position-x: -258px
+            background-position-y: -1103px
+        .four
+            background-position-x: -548px
+            background-position-y: -1103px
+        .five
+            background-position-x: -488px
+            background-position-y: -1303px
+        .six
+            background-position-x: -728px
+            background-position-y: -1303px
+        .seven
+            background-position-x: -488px
+            background-position-y: -1503px
+        .eight
+            background-position-x: -728px
+            background-position-y: -1503px
+        .nine
+            background-position-x: -488px
+            background-position-y: -1703px
+    .we-offer-services .col-md-3 .service-card .icon-wrapper
+        width: 60px
+    .we-offer-services .col-md-3 .service-card .service-title
+        font-size: 22px
+        margin-top: 30px
+    .we-offer-services .row .col-md-6 h2 span, body .we-offer-services .row .col-md-6 h2
+        font-size: 60px!important
+    .eight p
+        width: 100px
+    .we-offer-services .read-more-services p
+        font-size: 22px
+    .we-offer-services .col-md-3 .service-card:hover
+        .service-title
+            font-size: 22px
+        .service-description
+            font-size: 14px
+    .pain-points .row
+        height: 50vh
+    .we-offer-services
+        margin-top: 0
+        margin-bottom: 0
+        padding-bottom: 0
+    .pain-points h1
+        font-size: 54px
+        text-align: left
+    .pain-points .row .col-md-12
+        margin-top: 30px
+    .pain-points p
+        font-size: 16px
+        text-align: left
+        width: 100%
+    .outsouce-needs
+        max-height: 100%
+    .outsouce-needs .row .col-md-6:last-child
+        height: 100%
+        margin-top: 100px
+    .outsouce-needs .row .col-md-6:last-child h1
+        font-size: 54px
+    .outsouce-needs .row .col-md-6:last-child p
+        font-size: 16px
+    section.we-make .row .we-make-cards .wm-card
+        &:first-child
+            background-position-x: -1800px
+            background-position-y: -682px
+        &:nth-child(2)
+            background-position-x: -2022px
+            background-position-y: -682px
+        &:nth-child(3)
+            background-position-x: -1788px
+            background-position-y: -957px
+        &:nth-child(4)
+            background-position-x: -2027px
+            background-position-y: -957px
+        &:nth-child(5)
+            background-position-x: -1821px
+            background-position-y: -1221px
+        &:nth-child(6)
+            background-position-x: -2013px
+            background-position-y: -1221px
+        &:nth-child(7)
+            background-position-x: -1781px
+            background-position-y: -1491px
+        &:nth-child(8)
+            background-position-x: -1950px
+            background-position-y: -1450px
+        &:nth-child(9)
+            background-position-x: -2070px
+            background-position-y: -1294px
+    .subscribe
+        display: flex
+        align-items: center
+        .col-sm-12
+            display: flex
+            align-items: center
+            justify-content: center
+            button
+                margin-top: 40px
+    .subscribe .form-label
+        left: 120px
+    footer
+        display: flex
+        flex-direction: column
+        align-items: center
+        ul
+            flex-wrap: wrap
+            li
+                width: 100px
+                text-align: left
+                width: 140px
+                &.about-footer
+                    margin-bottom: 50px
+                .f-services
+                    li
+                        text-align: left
+                p
+                    text-align: left
+                    
+        .copyright
+            width: 100%
+            margin-top: 50px
+// 576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤1200px
++media-breakpoint-up(xl)
+    
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤576px
++media-breakpoint-up(sm)
+
+
+    
+  
