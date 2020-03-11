@@ -27,6 +27,11 @@ body
 
 a, a:hover
 	text-decoration: none
+	color: $white
+	cursor: pointer
+a:hover
+	color: $green
+
 
 .img-responsive
 	display: block
@@ -354,10 +359,11 @@ section.your-partner
 		align-items: center
 		justify-content: center
 		cursor: pointer
-		p
+		a
 			font-size: 21px
 			font-family: NevisBold
 			letter-spacing: .05em
+			color: $white
 			&:hover span
 				border-bottom: $orange 2px solid
 
@@ -451,23 +457,24 @@ section.we-make
 			.wm-card
 				position: relative
 				width: 250px
-				height: 328px
+				height: 358px
 				background-image: url('../img/_src/wm-pattern.svg')
 				background-size: 3220px
 				border-radius: 30px
-				padding-top: 46px
+				padding-top: 30px
 				padding-left: 26px
+				padding-right: 10px
 				margin-right: 52px
 				border: 0px $green solid
 				box-shadow: 0px 0px 0px $green, 0px 0px 0px $green, 0px 0px 0px $green
 				h4
 					font-family: MyriadPro
 					font-weight: 700
-					font-size: 34px
+					font-size: 28px
 					margin-top: 28px
 				p
-					font-size: 14px
-					line-height: 21px
+					font-size: 13px
+					line-height: 19px
 				.icon-wrapper
 					width: 84px
 					height: 66px
@@ -564,6 +571,8 @@ section.we-make
 		justify-content: center
 
 footer
+	position: relative
+	z-index: 100
 	ul
 		display: flex
 		justify-content: space-between
