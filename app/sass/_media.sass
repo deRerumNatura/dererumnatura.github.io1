@@ -93,7 +93,7 @@
         flex-direction: row
         flex-wrap: wrap
         align-items: center
-        justify-content: space-between
+        justify-content: space-around
         margin-top: 50px
     section.we-make
         max-height: 100%
@@ -379,7 +379,10 @@
             margin-top: 50px
 // 576px
 +media-breakpoint-down(xs)
-
+    .we-offer-services .col-sm-6
+        width: 50%
+        .service-card
+            width: 100%
 
 /*==========  Mobile First  ==========*/
 
