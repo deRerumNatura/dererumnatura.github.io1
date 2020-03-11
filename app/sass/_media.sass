@@ -28,6 +28,19 @@
         height: 240px
     .one
         background-position-x: -78px
+    /////ABOUT////////
+    .about-header .header-content
+        h1
+            font-size: 54px
+        p
+            margin-top: 30vh
+    .core-values-wrapper
+        img
+            content: attr(src, './img/_src/about-page/our-core-values-tablet.png')
+    section.our-core-values .row h1
+        font-size: 50px
+    section.our-core-values .row .core-values-wrapper
+        left: calc(((100vw - 992px)/ -2) - 60px)
 // 992px
 +media-breakpoint-down(md)
     .we-offer-services .col-md-3 .service-card
@@ -150,6 +163,28 @@
         max-height: 500px
     .we-make-pattern-wrapper
         display: none
+
+    /// ABOUT ///
+
+    .about-header .header-content h1
+        font-size: 66px
+        margin-top: 100px
+    .about-header .header-content p
+        font-size: 21px
+        letter-spacing: 0.05em
+        margin-top: 0
+    section.our-vison-mission .row .col-lg-3 .our-mission-wrapper img, section.our-vison-mission .row .col-lg-3 .our-vision-wrapper img
+        width: 100%
+    section.our-core-values .row .core-values-wrapper
+        left: calc(((100vw - 776px)/ -2) - 60px)
+        top: -150px
+    .learn-more-about .visible .col-lg-2
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-top: 50px
+    section.learn-more-about .visible p
+        text-align: center
             
         
 // 768px
@@ -385,6 +420,20 @@
         .copyright
             width: 100%
             margin-top: 50px
+    //// ABOUT ////
+    section.our-vison-mission .row .col-lg-3
+        display: flex
+        align-items: center
+        justify-content: center
+
+    section.our-core-values .row .core-values-wrapper
+        left: calc(((100vw - 20px)/ -2) - 60px)
+        top: -80px
+    section.our-core-values .row .core-values-wrapper img
+        width: 193vw
+    section.our-core-values .row h1
+        text-align: left
+        font-size: 45px
 // 576px
 +media-breakpoint-down(xs)
     .we-offer-services .col-sm-6
