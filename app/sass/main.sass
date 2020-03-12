@@ -749,6 +749,245 @@ section.learn-more-about
 			left: 0
 			img
 				width: 100vw
+////// SERVICES /////////I
+
+.services-header
+	position: relative
+	height: 100vh
+	nav
+		position: relative
+		z-index: 999
+	.services-header-pattern-wrapper
+		position: absolute
+		z-index: 1
+		left: calc((100vw - 1110px) / -2)
+		opacity: .5
+		width: 100vw
+		img
+			width: 100%
+.services-header-content
+	position: relative
+	z-index: 999
+	margin-top: 60px
+	height: 70vh
+	max-height: 800px
+	.col-lg-7
+		display: flex
+		flex-direction: column
+		h1
+			font-size: 66px
+		p
+			position: relative
+			font-size: 17px
+			line-height: 27px
+			letter-spacing: 0.03em
+			margin-top: 100px
+			width: 65%
+			margin-right: 20px
+			b
+				letter-spacing: 0.05em
+	.s-header-img-wrapper
+		position: relative
+		left: -200px
+		top: -3vh
+		width: 45vw
+		img
+			width: 100%
+
+section.our-workflow
+	height: 100vh
+	max-height: 800px
+	position: relative
+	z-index: 999
+	.row
+		margin-top: 20%
+		height: 70%
+		.col-lg-3
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			.our-workflow-wrapper, .its-efficient-wrapper
+				display: flex
+				justify-content: flex-end
+				align-items: center
+				height: 80%
+				margin-right: 40px
+				img
+					width: 60%
+		.col-lg-5
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			.our-workflow-text, .its-efficient-text
+				h1
+					margin-bottom: 21px
+					font-size: 34px
+					font-family: NevisBold
+					margin-top: 20px
+				p
+					font-size: 14px
+					line-height: 23px
+					letter-spacing: 0.04em
+
+section.services-desc
+	h1
+		font-size: 54px
+		font-family: NevisBold
+		margin-bottom: 100px
+
+	.service-desc-card
+		background-image: url(../img/_src/services-page/services-desc-pattern.svg)
+		background-size: 3500px
+		background-position-x: -4250px
+		background-position-y: -905px
+		width: 100%
+		display: flex
+		border-radius: 30px
+		margin-bottom: 30px
+		flex-direction: column
+		transition: .5s
+		.visible-desc
+			display: flex
+			flex-direction: row
+			align-items: center
+			.icon-wrapper
+				height: 60px
+				width: 60px
+				margin: 20px
+				img
+					height: 100%
+			.title
+				p
+					font-size: 34px
+					margin: 0 0 0 30px
+			.open-symbol
+				display: flex
+				flex-direction: column
+				justify-content: center
+				height: 60px
+				position: absolute
+				right: 50px
+				cursor: pointer
+				span
+					height: 3px
+					background: $orange
+					width: 40px
+					&:last-child
+						margin-top: -3px
+						transform: rotate(90deg)
+		&:nth-child(1)
+			background-position-y: -905px
+		&:nth-child(2)
+			background-position-y: -1025px
+		&:nth-child(3)
+			background-position-y: -1145px
+			.icon-wrapper
+				height: 50px
+				width: 40px
+				margin: 30px
+		&:nth-child(4)
+			background-position-y: -1265px
+			.icon-wrapper
+				height: 50px
+				width: 40px
+				margin: 30px
+		&:nth-child(5)
+			background-position-y: -1385px
+			.icon-wrapper
+				height: 50px
+				width: 40px
+				margin: 30px
+		&:nth-child(6)
+			background-position-y: -1505px
+			.icon-wrapper
+				height: 50px
+				width: 40px
+				margin: 30px
+		&:nth-child(7)
+			background-position-y: -1625px
+			.icon-wrapper
+				height: 50px
+				width: 40px
+				margin: 30px
+		&:nth-child(8)
+			background-position-y: -1745px
+			.icon-wrapper
+				height: 50px
+				width: 40px
+				margin: 30px
+		&:nth-child(9)
+			background-position-y: -1865px
+			.icon-wrapper
+				height: 50px
+				width: 40px
+				margin: 30px
+	.active
+		transition: .5s
+		display: flex /////
+		color: $orange
+		flex-wrap: wrap
+		border: $orange 2px solid
+		box-shadow: 0px 0px 2px $orange, 0px 0px 10px $orange
+		.visible-desc
+			margin-top: 40px
+			.open-symbol
+				right: 80px
+				span
+					background: $white
+					&:last-child
+						opacity: 0
+			.title
+				p
+					font-weight: 700
+		.invisible-desc
+			display: none
+			transition: .5s
+			padding: 10px 100px 60px 100px
+			display: flex
+			flex-direction: column
+			align-items: center
+			p
+				font-size: 18px
+				line-height: 29px
+				letter-spacing: 0.04em
+				color: $white
+				margin-bottom: 54px
+				&:first-child
+					margin-top: 30px
+			h4
+				font-size: 34px
+				color: $white
+			.respons
+				display: flex
+				flex-wrap: wrap
+				align-items: center
+				justify-content: center
+				margin-top: 50px
+				margin-bottom: 50px
+				width: 110%
+				span
+					border: $orange 2px solid
+					box-shadow: 0px 0px 2px $orange, 0px 0px 6px $orange
+					border-radius: 30px
+					padding: 10px 36px
+					font-size: 18px
+					margin: 20px 20px 10px 0
+					font-weight: 700
+			.service-hide-btn
+				border: none
+				color: $white
+				padding: 5px
+				height: 35px
+				border-bottom: 2px solid $white
+				border-radius: 0px
+				width: 50px
+				cursor: pointer
+				&:hover
+					box-shadow: 0px 0px 0px
+					border: none
+					padding-bottom: 2px
+					color: $orange
+
 
 @import "media"
 // Always at the end
