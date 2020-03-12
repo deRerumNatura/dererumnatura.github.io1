@@ -607,10 +607,10 @@ $(document).ready(function () {
    ////// Burger mnu ///////////////////////////////////
 
    $('#burger').click(function () {
-      if($('#mobileMnu').css('left') == '0px') {
-         $('#mobileMnu').animate({'left': '-100vw'}, 300)
+      if ($('#mobileMnu').css('left') == '0px') {
+         $('#mobileMnu').animate({ 'left': '-100vw' }, 300)
       } else {
-         $('#mobileMnu').animate({'left': '0'}, 300)
+         $('#mobileMnu').animate({ 'left': '0' }, 300)
       }
    });
 
@@ -619,12 +619,35 @@ $(document).ready(function () {
    //////////////////////////////////////////
    ///// ABOUT PAGE | Change img src/////////
 
-   if($(window).width() <= 1200) {
+   if ($(window).width() <= 1200) {
       $('.our-core-values .core-values-wrapper img').attr('src', './img/_src/about-page/our-core-values-tablet.png');
    }
 
-   if($(window).width() <= 768) {
+   if ($(window).width() <= 768) {
       $('.our-core-values .core-values-wrapper img').attr('src', './img/_src/about-page/our-core-values-mob.png');
    }
+
+   ///////////////END/////////////////////////////
+
+   //////////////////////////////////////////
+   ///// ABOUT PAGE | show learn more/////////
+   $('#aboutLearnMoreBtn').click(function () {
+      if (!$('#aboutlearnMoreInfo').is(':visible')) {
+         $('#aboutlearnMoreInfo').css({ display: 'flex' });
+         $('#aboutlearnMoreInfo').animate({ opacity: '1' }, 300);
+      } else {
+         $('#aboutlearnMoreInfo').animate({ opacity: '0' }, 300)
+         setTimeout(function () {
+            $('#aboutlearnMoreInfo').css({ display: 'none' });
+         }, 1000)
+      }
+   });
+   $('#hideLearnMoreBtn').click(function () {
+      $('#aboutlearnMoreInfo').animate({ opacity: '0' }, 300)
+      setTimeout(function () {
+         $('#aboutlearnMoreInfo').css({ display: 'none' });
+      }, 1000)
+   });
+   
 
 });
