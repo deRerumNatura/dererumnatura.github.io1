@@ -1,4 +1,36 @@
 $(document).ready(function () {
+   // lottie animation
+   $('.main-container').css({'opacity': '0'});
+   $('.lottie').animate({
+      'left': '0'
+   }, 10);
+   $('.lottie').css('display', 'none');
+   setTimeout(function() {
+      $('.lottie').css('display', 'flex');
+   },1500);
+
+   setTimeout(function() {
+      $('.main-container').animate({'opacity': '1'}, 500);
+
+      $('.lottie').animate({
+         'width':'118px',
+         'height':'40px',
+         'justify-content': 'flex-start',
+         'top': '57px',
+         'left': 'calc((100vw - 1100px) / 2)'
+      }, 800);
+
+      $('lottie-player').animate({
+         'width':'118px',
+         'height':'40px',
+         'left': '0'
+      }, 800);
+   },5000);
+
+
+   
+   
+
    //////////////////////////////////////////////////////////////
    ////// Services cards hover///////////////////////////////////
 
@@ -306,31 +338,33 @@ $(document).ready(function () {
    let leftPost = 0;
    let offset = 300;
 
-   $('#rightArrow').mouseenter(function () {
-      let left = $('#weMakeCardsBlock').css('left');
+   // $('#rightArrow').mouseenter(function () {
+   //    let left = $('#weMakeCardsBlock').css('left');
 
-      $('#weMakeCardsBlock').animate({
-         'left': parseInt(left.substr(0, left.length - 2)) - 10 + 'px'
-      }, 100);
+   //    $('#weMakeCardsBlock').animate({
+   //       'left': parseInt(left.substr(0, left.length - 2)) - 10 + 'px'
+   //    }, 100);
 
-      $(this).animate({
-         'margin-left': 10 + 'px'
-      }, 100);
-   }).mouseleave(function () {
-      let left = $('#weMakeCardsBlock').css('left');
+   //    $(this).animate({
+   //       'margin-left': 10 + 'px'
+   //    }, 100);
+   // }).mouseleave(function () {
+   //    let left = $('#weMakeCardsBlock').css('left');
 
-      $('#weMakeCardsBlock').animate({
-         'left': parseInt(left.substr(0, left.length - 2)) + 10 + 'px'
-      }, 100);
+   //    $('#weMakeCardsBlock').animate({
+   //       'left': parseInt(left.substr(0, left.length - 2)) + 10 + 'px'
+   //    }, 100);
 
-      $(this).animate({
-         'margin-left': 0 + 'px'
-      }, 100);
-   });
+   //    $(this).animate({
+   //       'margin-left': 0 + 'px'
+   //    }, 100);
+   // });
+
+   function wmCardsAnimation() {
+      console.log('cloeck');
+      $('#rightArrow').off('click');
 
 
-   $('#rightArrow').click(function () {
-      console.log(i);
       if (i != 10) {
          $('#wmCard1').animate({
             'background-position-x': '-989px',
@@ -339,7 +373,8 @@ $(document).ready(function () {
 
          if (i == 1) {
             $('#wmCard2').animate({
-               'background-position-x': '-1289px',
+               'background-position-x': '-1326px',
+               'background-position-y': '-706px',
                'border': '2px solid #16F898',
                'box-shadow': '0px 0px 2px #16F898, 0px 0px 10px #16F898'
             }, 400);
@@ -352,11 +387,12 @@ $(document).ready(function () {
 
 
             $('#wmCard3').animate({
-               'background-position-x': '-1589px',
+               'background-position-x': '-1641px',
+               'background-position-y': '-702px',
             }, 400);
 
             $('#wmCard4').animate({
-               'background-position-x': '-1889px',
+               'background-position-x': '-1941px',
             }, 400);
          }
 
@@ -367,7 +403,7 @@ $(document).ready(function () {
             }, 400);
 
             $('#wmCard3').animate({
-               'background-position-x': '-1289px',
+               'background-position-x': '-1330px',
                'border': '2px solid #16F898',
                'box-shadow': '0px 0px 2px #16F898, 0px 0px 10px #16F898'
             }, 400);
@@ -380,11 +416,11 @@ $(document).ready(function () {
             }, 300);
 
             $('#wmCard4').animate({
-               'background-position-x': '-1589px',
+               'background-position-x': '-1645px',
             }, 400);
 
             $('#wmCard5').animate({
-               'background-position-x': '-1889px',
+               'background-position-x': '-1945px',
             }, 400);
          }
 
@@ -395,7 +431,8 @@ $(document).ready(function () {
             }, 400);
 
             $('#wmCard4').animate({
-               'background-position-x': '-1289px',
+               'background-position-x': '-1331px',
+               'background-position-y': '-706px',
                'border': '2px solid #16F898',
                'box-shadow': '0px 0px 2px #16F898, 0px 0px 10px #16F898'
             }, 400);
@@ -408,11 +445,12 @@ $(document).ready(function () {
             }, 300);
 
             $('#wmCard5').animate({
-               'background-position-x': '-1589px',
+               'background-position-x': '-1641px',
             }, 400);
 
             $('#wmCard6').animate({
-               'background-position-x': '-1889px',
+               'background-position-x': '-1945px',
+               'background-position-y': '-706px',
             }, 400);
          }
 
@@ -423,7 +461,8 @@ $(document).ready(function () {
             }, 400);
 
             $('#wmCard5').animate({
-               'background-position-x': '-1289px',
+               'background-position-x': '-1335px',
+               'background-position-y': '-706px',
                'border': '2px solid #16F898',
                'box-shadow': '0px 0px 2px #16F898, 0px 0px 10px #16F898'
             }, 400);
@@ -436,11 +475,12 @@ $(document).ready(function () {
             }, 300);
 
             $('#wmCard6').animate({
-               'background-position-x': '-1589px',
+               'background-position-x': '-1641px',
+               'background-position-y': '-706px',
             }, 400);
 
             $('#wmCard7').animate({
-               'background-position-x': '-1889px',
+               'background-position-x': '-1946px',
             }, 400);
          }
 
@@ -451,7 +491,8 @@ $(document).ready(function () {
             }, 400);
 
             $('#wmCard6').animate({
-               'background-position-x': '-1289px',
+               'background-position-x': '-1335px',
+               'background-position-y': '-704px',
                'border': '2px solid #16F898',
                'box-shadow': '0px 0px 2px #16F898, 0px 0px 10px #16F898'
             }, 400);
@@ -464,11 +505,11 @@ $(document).ready(function () {
             }, 300);
 
             $('#wmCard7').animate({
-               'background-position-x': '-1589px',
+               'background-position-x': '-1641px',
             }, 400);
 
             $('#wmCard8').animate({
-               'background-position-x': '-1889px',
+               'background-position-x': '-1947px',
             }, 400);
          }
 
@@ -479,7 +520,7 @@ $(document).ready(function () {
             }, 400);
 
             $('#wmCard7').animate({
-               'background-position-x': '-1289px',
+               'background-position-x': '-1337px',
                'border': '2px solid #16F898',
                'box-shadow': '0px 0px 2px #16F898, 0px 0px 10px #16F898'
             }, 400);
@@ -492,11 +533,11 @@ $(document).ready(function () {
             }, 300);
 
             $('#wmCard8').animate({
-               'background-position-x': '-1589px',
+               'background-position-x': '-1641px',
             }, 400);
 
             $('#wmCard9').animate({
-               'background-position-x': '-1889px',
+               'background-position-x': '-1952px',
             }, 400);
          }
 
@@ -507,7 +548,7 @@ $(document).ready(function () {
             }, 400);
 
             $('#wmCard8').animate({
-               'background-position-x': '-1289px',
+               'background-position-x': '-1338px',
                'border': '2px solid #16F898',
                'box-shadow': '0px 0px 2px #16F898, 0px 0px 10px #16F898'
             }, 400);
@@ -520,12 +561,8 @@ $(document).ready(function () {
             }, 300);
 
             $('#wmCard9').animate({
-               'background-position-x': '-1589px',
+               'background-position-x': '-1641px',
             }, 400);
-
-            // $('#wmCard9').animate({
-            //    'background-position-x': '-1889px',
-            // }, 400);
          }
 
          if (i == 8) {
@@ -535,7 +572,7 @@ $(document).ready(function () {
             }, 400);
 
             $('#wmCard9').animate({
-               'background-position-x': '-1289px',
+               'background-position-x': '-1340px',
                'border': '2px solid #16F898',
                'box-shadow': '0px 0px 2px #16F898, 0px 0px 10px #16F898'
             }, 400);
@@ -549,6 +586,7 @@ $(document).ready(function () {
          }
 
          if (i < 10) {
+            
             $('#weMakeCardsBlock').animate({
                'left': leftPost - offset + 'px'
             }, 400);
@@ -568,15 +606,15 @@ $(document).ready(function () {
             }, 10);
 
             $('#wmCard1').animate({
-               'background-position-x': '-1289px',
+               'background-position-x': '-1326px',
             }, 100);
 
             $('#wmCard2').animate({
-               'background-position-x': '-1589px',
+               'background-position-x': '-1641px',
             }, 100);
 
             $('#wmCard3').animate({
-               'background-position-x': '-1889px',
+               'background-position-x': '-1941px',
             }, 100);
 
 
@@ -599,8 +637,13 @@ $(document).ready(function () {
             leftPost = 0;
          }
       }
+      setTimeout(function () {
+         $('#rightArrow').on('click', wmCardsAnimation);
+      }, 800);
+   }
 
-   });
+   $('#rightArrow').on('click', wmCardsAnimation);
+   
    /////////////////END////////////////////////
 
    //////////////////////////////////////////////////////////////
@@ -660,30 +703,36 @@ $(document).ready(function () {
    $('#openDescSymbol1').click(function () {
       if (!$('#desc1').is(':visible')) {
          $('.service-desc-card:nth-child(1)').addClass('active');
+         $('.service-desc-card:nth-child(1)').css('background-image', 'none');
          $('#desc1').css('display', 'flex');
       } else {
          $('.service-desc-card:nth-child(1)').removeClass('active');
          $('#desc1').css('display', 'none');
+         $('.service-desc-card:nth-child(1)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern.svg)');
       }
    });
 
    $('#openDescSymbol2').click(function () {
       if (!$('#desc2').is(':visible')) {
          $('.service-desc-card:nth-child(2)').addClass('active');
+         $('.service-desc-card:nth-child(2)').css('background-image', 'none');
          $('#desc2').css('display', 'flex');
       } else {
          $('.service-desc-card:nth-child(2)').removeClass('active');
          $('#desc2').css('display', 'none');
+         $('.service-desc-card:nth-child(2)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern.svg)');
       }
    });
 
    $('#openDescSymbol3').click(function () {
       if (!$('#desc3').is(':visible')) {
          $('.service-desc-card:nth-child(3)').addClass('active');
+         $('.service-desc-card:nth-child(3)').css('background-image', 'none');
          $('#desc3').css('display', 'flex');
       } else {
          $('.service-desc-card:nth-child(3)').removeClass('active');
          $('#desc3').css('display', 'none');
+         $('.service-desc-card:nth-child(3)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern.svg)');
       }
    });
 
@@ -691,9 +740,11 @@ $(document).ready(function () {
       if (!$('#desc4').is(':visible')) {
          $('.service-desc-card:nth-child(4)').addClass('active');
          $('#desc4').css('display', 'flex');
+         $('.service-desc-card:nth-child(4)').css('background-image', 'none');
       } else {
          $('.service-desc-card:nth-child(4)').removeClass('active');
          $('#desc4').css('display', 'none');
+         $('.service-desc-card:nth-child(4)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern.svg)');
       }
    });
 
@@ -701,9 +752,11 @@ $(document).ready(function () {
       if (!$('#desc5').is(':visible')) {
          $('.service-desc-card:nth-child(5)').addClass('active');
          $('#desc5').css('display', 'flex');
+         $('.service-desc-card:nth-child(5)').css('background-image', 'none');
       } else {
          $('.service-desc-card:nth-child(5)').removeClass('active');
          $('#desc5').css('display', 'none');
+         $('.service-desc-card:nth-child(5)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern.svg)');
       }
    });
 
@@ -711,9 +764,11 @@ $(document).ready(function () {
       if (!$('#desc6').is(':visible')) {
          $('.service-desc-card:nth-child(6)').addClass('active');
          $('#desc6').css('display', 'flex');
+         $('.service-desc-card:nth-child(6)').css('background-image', 'none');
       } else {
          $('.service-desc-card:nth-child(6)').removeClass('active');
          $('#desc6').css('display', 'none');
+         $('.service-desc-card:nth-child(6)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern.svg)');
       }
    });
 
@@ -721,9 +776,11 @@ $(document).ready(function () {
       if (!$('#desc7').is(':visible')) {
          $('.service-desc-card:nth-child(7)').addClass('active');
          $('#desc7').css('display', 'flex');
+         $('.service-desc-card:nth-child(7)').css('background-image', 'none');
       } else {
          $('.service-desc-card:nth-child(7)').removeClass('active');
          $('#desc7').css('display', 'none');
+         $('.service-desc-card:nth-child(7)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern.svg)');
       }
    });
 
@@ -731,9 +788,11 @@ $(document).ready(function () {
       if (!$('#desc8').is(':visible')) {
          $('.service-desc-card:nth-child(8)').addClass('active');
          $('#desc8').css('display', 'flex');
+         $('.service-desc-card:nth-child(8)').css('background-image', 'none');
       } else {
          $('.service-desc-card:nth-child(8)').removeClass('active');
          $('#desc8').css('display', 'none');
+         $('.service-desc-card:nth-child(8)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern.svg)');
       }
    });
 
@@ -743,6 +802,11 @@ $(document).ready(function () {
       console.log('hide');
       $('.service-desc-card').removeClass('active');
       $('.invisible-desc').css('display', 'none');
+   });
+
+   // logo click to home
+   $('.logo, .logo-mobile').click(function () {
+      window.location.href = "./";
    });
 
 });

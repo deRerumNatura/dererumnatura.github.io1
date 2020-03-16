@@ -8,7 +8,8 @@
 ::selection
 	color: $white
 	background-color: $green
-
+html
+	overflow-x: hidden
 body
 	font-size: 14px
 	background: $background-dark
@@ -79,7 +80,8 @@ header
 		align-items: center
 		font-weight: light
 		.logo
-			height: 42px
+			cursor: pointer
+			height: 35px
 			width: 40vw
 			img
 				height: 100%
@@ -371,7 +373,7 @@ section.your-partner
 	.needs-img-wrapper
 		height: 120vh
 		width: 110vw
-		left: -10vw
+		left: -20vw
 		position: absolute
 		z-index: 5
 		opacity: .5
@@ -457,7 +459,7 @@ section.we-make
 				width: 250px
 				height: 358px
 				background-image: url('../img/_src/wm-pattern.svg')
-				background-size: 3220px
+				background-size: 3300px
 				border-radius: 30px
 				padding-top: 30px
 				padding-left: 26px
@@ -480,34 +482,34 @@ section.we-make
 						width: 100%
 						height: 100%
 				&:first-child
-					background-position-x: -1289px
-					background-position-y: -682px
+					background-position-x: -1326px
+					background-position-y: -705px
 					border: 2px $green solid
 					box-shadow: 0px 0px 2px $green, 0px 0px 0px $green, 0px 0px 10px $green
 				&:nth-child(2)
-					background-position-x: -1589px
-					background-position-y: -682px
+					background-position-x: -1641px
+					background-position-y: -702px
 				&:nth-child(3)
-					background-position-x: -1889px
-					background-position-y: -682px
+					background-position-x: -1941px
+					background-position-y: -704px
 				&:nth-child(4)
-					background-position-x: -2189px
-					background-position-y: -682px
+					background-position-x: -1641px
+					background-position-y: -702px
 				&:nth-child(5)
-					background-position-x: -2489px
-					background-position-y: -682px
+					background-position-x: -1641px
+					background-position-y: -702px
 				&:nth-child(6)
-					background-position-x: -2789px
-					background-position-y: -682px
+					background-position-x: -1641px
+					background-position-y: -702px
 				&:nth-child(7)
-					background-position-x: -3089px
-					background-position-y: -682px
+					background-position-x: -1641px
+					background-position-y: -702px
 				&:nth-child(8)
-					background-position-x: -3389px
-					background-position-y: -682px
+					background-position-x: -1641px
+					background-position-y: -702px
 				&:nth-child(9)
-					background-position-x: -3689px
-					background-position-y: -682px
+					background-position-x: -1641px
+					background-position-y: -702px
 
 .subscribe
 	position: relative
@@ -718,12 +720,13 @@ section.our-core-values
 	letter-spacing: 0.05em
 	width: 30vw
 	margin-top: 70px
-	background-color: $white
+	color: $white
+	cursor: pointer
 	&:hover
 		box-shadow: 0px 0px 0px $green, 0px 0px 0px $green
 		transition: .2s
-		background-color: transparent
-		color: $white
+		background-color: $white
+		color: $background-dark
 section.learn-more-about
 	.visible
 		display: flex
@@ -738,6 +741,8 @@ section.learn-more-about
 		h1
 			font-size: 49px
 			margin-bottom: 100px
+			position: relative
+			z-index: 999
 		p
 			margin-bottom: 70px
 			font-size: 18px
@@ -929,7 +934,9 @@ section.services-desc
 		border: $orange 2px solid
 		box-shadow: 0px 0px 2px $orange, 0px 0px 10px $orange
 		.visible-desc
-			margin-top: 40px
+			margin-top: 40px	
+			padding: 10px 100px 20px 90px
+			transition: .5s
 			.open-symbol
 				right: 80px
 				span
@@ -987,7 +994,137 @@ section.services-desc
 					border: none
 					padding-bottom: 2px
 					color: $orange
+//// contacts////
+header.contacts
+	h1
+		font-size: 64px
+		margin-top: 50px
+	p.contact-page-info
+		margin-top: 40px
+		margin-bottom: 60px
+		width: 95%
+		line-height: 23px
+		letter-spacing: 0.04em
+		font-size: 15px
+	.row:nth-child(2)
+		margin-bottom: 100px
+		.contact-form
+			display: flex
+			flex-direction: column
+			form
+				display: flex
+				flex-direction: column		
+				input, textarea
+					background: transparent
+					border-radius: 30px
+					height: 40px
+					width: 90%
+					margin-top: 20px
+					border: 1px solid $orange
+					padding: 0 20px
+					color: $white
+					&:first-child
+						margin-top: 0
+					&:focus
+						box-shadow: 0px 0px 2px $orange, 0px 0px 6px $orange
+				textarea
+					padding-top: 10px
+					padding-bottom: 20px
+					overflow: hidden
+			span.form-label
+					position: relative
+					top: -50px
+					left: 40px
+					background: $background-dark
+					width: 185px
+					text-align: center
+					letter-spacing: 0.04em
+					color: $white
+					&:nth-child(2)
+						width: 100px
+					&:nth-child(6)
+						width: 100px
+						position: absolute
+						top: 145px
+						left: 60px
+			button
+				border-radius: 30px
+				border: none
+				width: 20%
+				height: 40px
+				align-self: flex-end
+				margin-right: 10%
+				font-weight: 700
+				margin-top: 40px
+				transition: .1s
+				cursor: pointer
+				background: transparent
+				color: $orange
+				border: $orange 1px solid
+				&:hover
+					box-shadow: 0px 0px 2px $orange, 0px 0px 6px $orange
+					border: $orange 1px solid
+					transition: .1s
+					background: $orange
+					color: $background-dark
+		.contact-info
+			display: flex
+			flex-direction: column
+			p
+				font-size: 21px
+				font-weight: normal
+				line-height: 30px
+			.phones-social
+				p
+					margin: 0
+					&:first-child
+						margin-top: 10px
+				.social
+					margin-top: 20px
+					height: 60px
+					display: flex
+					align-items: center
+					a
+						img
+							height: 80%
+							color: $orange
+							margin-right: 20px
+.map
+	width: 100%
+	height: 100%
+	background-image: url(../img/_src/contact-map.png)
+	background-size: 100%
+	position: absolute
+	z-index: 1
+	background-repeat: no-repeat
+	background-position-y: 80px 
+	opacity: .5
 
+.terms-header
+	height: 80vh
+	h1
+		text-align: center
+		margin-top: 10vh
+section.terms
+	margin-bottom: 20vh
+	p
+		font-size: 16px
+		line-height: 25px
+		margin-top: 10px
+		opacity: .8
+	h4
+		font-size: 21px
+		margin-top: 50px
 
+.lottie
+	display: none
+	position: absolute
+	z-index: 1000
+	width: 100vw
+	height: 100vh
+	display: flex
+	align-items: center
+	justify-content: center
+	left: calc((100vw - 1100px) / 2)
 @import "media"
 // Always at the end
