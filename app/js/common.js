@@ -1,35 +1,24 @@
 $(document).ready(function () {
    // lottie animation
-   $('.main-container').css({'opacity': '0'});
-   $('.lottie').animate({
-      'left': '0'
-   }, 10);
+   $('.main-container').css({ 'opacity': '0'});
+   if (window.location.pathname == '/index.html') {
+      $('html').css({ 'overflow': 'hidden'});
+   }
    $('.lottie').css('display', 'none');
-   setTimeout(function() {
+
+   setTimeout(function () {
       $('.lottie').css('display', 'flex');
-   },1500);
+   }, 1200);
 
-   setTimeout(function() {
-      $('.main-container').animate({'opacity': '1'}, 500);
+   setTimeout(function () {
+      $('.lottie').animate({ 'opacity': '0' }, 800);
+   }, 5000);
 
-      $('.lottie').animate({
-         'width':'118px',
-         'height':'40px',
-         'justify-content': 'flex-start',
-         'top': '57px',
-         'left': 'calc((100vw - 1100px) / 2)'
-      }, 800);
-
-      $('lottie-player').animate({
-         'width':'118px',
-         'height':'40px',
-         'left': '0'
-      }, 800);
-   },5000);
-
-
-   
-   
+   setTimeout(function () {
+      $('.main-container').animate({ 'opacity': '1' }, 1200);
+      $('.lottie').css({ 'display': 'none' });
+      $('html').css({ 'overflow-y': 'scroll'});
+   }, 6000);
 
    //////////////////////////////////////////////////////////////
    ////// Services cards hover///////////////////////////////////
@@ -586,7 +575,7 @@ $(document).ready(function () {
          }
 
          if (i < 10) {
-            
+
             $('#weMakeCardsBlock').animate({
                'left': leftPost - offset + 'px'
             }, 400);
@@ -643,7 +632,7 @@ $(document).ready(function () {
    }
 
    $('#rightArrow').on('click', wmCardsAnimation);
-   
+
    /////////////////END////////////////////////
 
    //////////////////////////////////////////////////////////////
@@ -802,6 +791,7 @@ $(document).ready(function () {
       console.log('hide');
       $('.service-desc-card').removeClass('active');
       $('.invisible-desc').css('display', 'none');
+      $('.service-desc-card').css('background-image', 'url(../img/_src/services-page/services-desc-pattern.svg)');
    });
 
    // logo click to home
