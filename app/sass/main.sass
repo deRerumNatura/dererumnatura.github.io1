@@ -80,6 +80,7 @@ header
 		align-items: center
 		font-weight: light
 		.logo
+			opacity: 0
 			cursor: pointer
 			height: 45px
 			width: 40vw
@@ -93,8 +94,6 @@ header
 				list-style-type: none
 				padding-bottom: 2px
 				&:hover
-					border-bottom: 1px $white solid
-					padding-bottom: 1px
 					cursor: pointer
 				&:last-child a
 					padding: 8px 35px
@@ -162,6 +161,9 @@ a.get-obligation-btn
 
 .right-side
 	.header-illustration-wrapper
+		position: relative
+		left: 200px
+		opacity: 0
 		width: 42vw
 		max-width: 600px
 		margin-top: 20px
@@ -299,7 +301,6 @@ section.your-partner
 			background-position: left
 		.service-card
 			height: 100%
-			padding-left: 40px
 			transition: .25s
 			border: transparent 1px solid
 			border-radius: 30px
@@ -307,7 +308,7 @@ section.your-partner
 			display: flex
 			flex-direction: column
 			justify-content: space-between
-			padding: 20px 15px 40px 40px
+			padding: 20px 15px 20px 20px
 			.icon-wrapper
 				width: 48px
 				padding-top: 20px
@@ -340,7 +341,7 @@ section.your-partner
 				display: none
 				transition: .5s
 				font-size: 12px
-				width: 90%
+				width: 100%
 				opacity: .8
 				letter-spacing: 0.03em
 			a
@@ -1117,13 +1118,15 @@ section.terms
 		margin-top: 50px
 
 .lottie
-	display: none
-	position: absolute
-	z-index: 1000
-	width: 100vw
-	height: 100vh
 	display: flex
 	align-items: center
 	justify-content: center
+	height: 45px
+	width: 152px
+	cursor: pointer
+footer ul li:hover p
+	color: $white
+.we-offer-services .col-md-3 .service-card:hover a
+	margin-right: 10px
 @import "media"
 // Always at the end
