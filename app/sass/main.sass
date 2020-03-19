@@ -12,6 +12,7 @@ html
 	overflow-x: hidden
 body
 	font-size: 14px
+	overflow-x: hidden
 	background: $background-dark
 	min-width: 320px
 	position: relative
@@ -72,8 +73,12 @@ body::-webkit-scrollbar
 header
 	position: relative
 	z-index: 999
+	padding-top: 0
 	nav
+		z-index: 1000
+		position: relative
 		margin-top: 60px
+		top: 0
 		width: 100%
 		display: flex
 		justify-content: space-between
@@ -234,6 +239,7 @@ section.your-partner
 		font-size: 62px
 	.row
 		height: 70vh
+		max-height: 500px
 		.col-md-12
 			display: flex
 			align-items: center
@@ -370,9 +376,11 @@ section.your-partner
 
 .outsouce-needs
 	height: 100vh
+	max-height: 700px
 	position: relative
 	.needs-img-wrapper
 		height: 120vh
+		max-height: 1000px
 		width: 110vw
 		left: -20vw
 		position: absolute
@@ -611,12 +619,12 @@ footer
 			justify-content: space-between
 
 /////////////ABOUT////////////////////
+nav
+	position: relative
+	z-index: 999
 .about-header
 	position: relative
 	height: 100vh
-	nav
-		position: relative
-		z-index: 999
 	.about-header-pattern-wrapper
 		position: absolute
 		z-index: 1
@@ -757,25 +765,26 @@ section.learn-more-about
 				width: 100vw
 ////// SERVICES /////////I
 
+nav
+	position: relative
+	z-index: 999
 .services-header
 	position: relative
 	height: 100vh
-	nav
-		position: relative
-		z-index: 999
 	.services-header-pattern-wrapper
 		position: absolute
 		z-index: 1
 		left: calc((100vw - 1110px) / -2)
 		opacity: .5
 		width: 100vw
+		top: 0
 		img
 			width: 100%
 .services-header-content
 	position: relative
 	z-index: 999
-	margin-top: 60px
-	height: 70vh
+	margin-top: 10vh
+	height: 50vh
 	max-height: 800px
 	.col-lg-7
 		display: flex
@@ -806,8 +815,8 @@ section.our-workflow
 	position: relative
 	z-index: 999
 	.row
-		margin-top: 20%
-		height: 70%
+		margin-top: 15vh
+		height: 60%
 		.col-lg-3
 			display: flex
 			flex-direction: column
@@ -842,9 +851,9 @@ section.services-desc
 		margin-bottom: 100px
 
 	.service-desc-card
-		background-image: url(../img/_src/services-page/services-desc-pattern.svg)
-		background-size: 3500px
-		background-position-x: -4250px
+		background-image: url(../img/_src/services-page/services-desc-pattern-01.svg)
+		background-size: 1500px
+		background-position-x: -4720px
 		background-position-y: -905px
 		width: 100%
 		display: flex
@@ -886,37 +895,37 @@ section.services-desc
 		&:nth-child(2)
 			background-position-y: -1025px
 		&:nth-child(3)
-			background-position-y: -1145px
+			background-position-y: -1151px
 			.icon-wrapper
 				height: 50px
 				width: 40px
 				margin: 30px
 		&:nth-child(4)
-			background-position-y: -1265px
+			background-position-y: -1283px
 			.icon-wrapper
 				height: 50px
 				width: 40px
 				margin: 30px
 		&:nth-child(5)
-			background-position-y: -1385px
+			background-position-y: -1421px
 			.icon-wrapper
 				height: 50px
 				width: 40px
 				margin: 30px
 		&:nth-child(6)
-			background-position-y: -1505px
+			background-position-y: -1560px
 			.icon-wrapper
 				height: 50px
 				width: 40px
 				margin: 30px
 		&:nth-child(7)
-			background-position-y: -1625px
+			background-position-y: -1692px
 			.icon-wrapper
 				height: 50px
 				width: 40px
 				margin: 30px
 		&:nth-child(8)
-			background-position-y: -1745px
+			background-position-y: -1822px
 			.icon-wrapper
 				height: 50px
 				width: 40px

@@ -71,6 +71,11 @@
         left: -10vw
     .we-make-pattern-wrapper
         left: -860px
+    .services-header
+        max-height: 100vh
+    .services-header-content
+        height: 50vh
+        margin-top: 6vh
 // 992px
 +media-breakpoint-down(md)
     .we-offer-services .col-md-3 .service-card
@@ -234,7 +239,16 @@
         font-size: 13px
         line-height: 20px
     .services-header-content
-        margin-top: 10px
+        margin-top: 10vh
+    section.our-workflow
+        height: 80vh
+        .row
+            display: flex
+            justify-content: center
+    section.services-desc .service-desc-card
+        background-position-x: -4940px
+
+
         
 // 768px
 +media-breakpoint-down(sm)
@@ -489,6 +503,7 @@
         left: calc((100vw - 500px)/ -2)
     .services-header-content
         margin-top: 10vh
+        @if 
     .services-header-content .col-lg-7 h1
         width: 100%
     .services-header-content .s-header-img-wrapper
@@ -496,6 +511,7 @@
         left: -10px
     .services-header
         height: 100vh
+        max-height: 100vh
     section.our-workflow .row .col-lg-3 .its-efficient-wrapper img, section.our-workflow .row .col-lg-3 .our-workflow-wrapper img
         width: 70%
     section.our-workflow .row .col-lg-5 .its-efficient-text p, section.our-workflow .row .col-lg-5 .our-workflow-text p
@@ -503,6 +519,9 @@
         line-height: 18px
     section.our-workflow
         height: 80vh
+        .row
+            display: flex
+            justify-content: center
     .about-header .header-content p
         margin-top: 20px
     .terms-header
@@ -813,6 +832,11 @@
         font-size: 15px
     header.contacts .row:nth-child(2) .contact-form button
         align-self: flex-start
+    section.services-desc .service-desc-card
+        background-position-x: -3739px
+    .services-header .services-header-pattern-wrapper
+        left: calc((100vw - 97%)/ -2)
+        width: 100vw
 
 /*==========  Mobile First  ==========*/
 
