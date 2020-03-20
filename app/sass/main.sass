@@ -59,7 +59,6 @@ body::-webkit-scrollbar
 	display: none
 .mobile-mnu
 	display: none
-
 .header-bcg-pattern
 	position: absolute
 	z-index: 10
@@ -75,7 +74,7 @@ header
 	z-index: 999
 	padding-top: 0
 	nav
-		z-index: 1000
+		z-index: 1001
 		position: relative
 		margin-top: 60px
 		top: 0
@@ -226,7 +225,7 @@ section.your-partner
 .pain-points
 	position: relative
 	z-index: 996
-	max-height: 100vh
+	height: 60vh
 	margin-top: 200px
 	p
 		font-size: 14px
@@ -256,7 +255,7 @@ section.your-partner
 	margin-top: 140px
 	padding-bottom: 80px
 	position: relative
-	z-index: 999
+	z-index: 998
 	.col-md-3
 		padding: 20px 20px
 		height: 200px
@@ -635,8 +634,6 @@ nav
 		position: relative
 		z-index: 999
 		margin-top: 60px
-		height: 70vh
-		max-height: 800px
 		h1
 			font-size: 80px
 		p
@@ -651,7 +648,7 @@ section.our-vison-mission
 	height: 100vh
 	max-height: 800px
 	position: relative
-	z-index: 999
+	z-index: 998
 	.row
 		margin-top: 20%
 		height: 70%
@@ -684,7 +681,7 @@ section.our-vison-mission
 
 section.our-core-values
 	position: relative
-	z-index: 999
+	z-index: 998
 	display: flex
 	align-items: center
 	justify-content: center
@@ -737,6 +734,8 @@ section.our-core-values
 		background-color: $white
 		color: $background-dark
 section.learn-more-about
+	position: relative
+	z-index: 998
 	.visible
 		display: flex
 		margin-bottom: 150px
@@ -771,6 +770,7 @@ nav
 .services-header
 	position: relative
 	height: 100vh
+	max-height: 750px
 	.services-header-pattern-wrapper
 		position: absolute
 		z-index: 1
@@ -811,12 +811,12 @@ nav
 
 section.our-workflow
 	height: 100vh
-	max-height: 800px
 	position: relative
-	z-index: 999
+	z-index: 998
+	display: flex
+	justify-content: center
+	align-items: center
 	.row
-		margin-top: 15vh
-		height: 60%
 		.col-lg-3
 			display: flex
 			flex-direction: column
@@ -829,6 +829,8 @@ section.our-workflow
 				margin-right: 40px
 				img
 					width: 60%
+			.its-efficient-wrapper
+				margin-top: 100px
 		.col-lg-5
 			display: flex
 			flex-direction: column
@@ -843,6 +845,9 @@ section.our-workflow
 					font-size: 14px
 					line-height: 23px
 					letter-spacing: 0.04em
+			.its-efficient-text
+				margin-top: 100px
+
 
 section.services-desc
 	h1

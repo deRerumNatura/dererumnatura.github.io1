@@ -30,10 +30,15 @@
         background-position-x: -78px
     /////ABOUT////////
     .about-header .header-content
+        margin-top: 0
+        padding-top: 100px
+        height: 700px
         h1
-            font-size: 54px
+            font-size: 66px
         p
-            margin-top: 30vh
+            margin-top: 300px
+    .about-header
+        height: 700px
     .core-values-wrapper
         img
             content: attr(src, './img/_src/about-page/our-core-values-tablet.png')
@@ -41,6 +46,9 @@
         font-size: 50px
     section.our-core-values .row .core-values-wrapper
         left: calc(((100vw - 992px)/ -2) - 60px)
+    section.our-vison-mission
+        height: 700px
+        max-height: 100%
     //// SERVICES ///////I
     .services-header .services-header-pattern-wrapper
         left: calc((100vw - 911px)/ -2)
@@ -72,10 +80,11 @@
     .we-make-pattern-wrapper
         left: -860px
     .services-header
-        max-height: 100vh
+        height: 700px
     .services-header-content
-        height: 50vh
-        margin-top: 6vh
+        height: 600px
+    section.our-workflow
+        height: 800px
 // 992px
 +media-breakpoint-down(md)
     .we-offer-services .col-md-3 .service-card
@@ -202,12 +211,13 @@
     /// ABOUT ///
 
     .about-header .header-content h1
-        font-size: 66px
-        margin-top: 100px
+        font-size: 70px
+        margin-top: 0px
     .about-header .header-content p
         font-size: 21px
         letter-spacing: 0.05em
         margin-top: 0
+        line-height: 35px
     section.our-vison-mission .row .col-lg-3 .our-mission-wrapper img, section.our-vison-mission .row .col-lg-3 .our-vision-wrapper img
         width: 100%
     section.our-core-values .row .core-values-wrapper
@@ -220,6 +230,15 @@
         margin-top: 50px
     section.learn-more-about .visible p
         text-align: center
+    section.our-vison-mission
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 800px
+        .row
+            display: flex
+            justify-content: center
+            margin-top: 0
 
     //// SERVICES ///////I
     .services-header .services-header-pattern-wrapper
@@ -239,14 +258,31 @@
         font-size: 13px
         line-height: 20px
     .services-header-content
-        margin-top: 10vh
+        height: 100%
+        display: flex
+        align-items: center
+        margin-top: 0
+        align-self: center
     section.our-workflow
-        height: 80vh
+        height: 600px
         .row
             display: flex
             justify-content: center
     section.services-desc .service-desc-card
         background-position-x: -4940px
+    section.we-make .row .we-make-cards .wm-card
+        padding-left: 15px
+    section.we-make .row .we-make-cards .wm-card p
+        font-size: 12px
+        line-height: 16px
+    section.we-make .row .we-make-cards .wm-card .icon-wrapper
+        height: 44px
+    .services-header
+        height: 600px
+        display: flex
+        flex-direction: column
+    section.services-desc
+        padding-top: 100px
 
 
         
@@ -388,7 +424,9 @@
         font-size: 22px
         margin-top: 30px
     .we-offer-services .row .col-md-6 h2 span, body .we-offer-services .row .col-md-6 h2
-        font-size: 60px!important
+        font-size: 38px!important
+        width: 100%
+        margin-left: 0
     .eight p
         width: 100px
     .we-offer-services .read-more-services a
@@ -401,11 +439,11 @@
     .pain-points .row
         height: 50vh
     .we-offer-services
-        margin-top: 0
+        margin-top: 20vh
         margin-bottom: 0
         padding-bottom: 0
     .pain-points h1
-        font-size: 54px
+        font-size: 38px
         text-align: left
     .pain-points .row .col-md-12
         margin-top: 30px
@@ -415,13 +453,14 @@
         width: 100%
     .outsouce-needs
         max-height: 100%
+        height: 100%
     .outsouce-needs .row .col-md-6:last-child
         height: 100%
         margin-top: 100px
     section.we-make
         margin-top: 15vh
     .outsouce-needs .row .col-md-6:last-child h1
-        font-size: 54px
+        font-size: 39px
     .outsouce-needs .row .col-md-6:last-child p
         font-size: 16px
     section.we-make .row .we-make-cards .wm-card
@@ -491,34 +530,40 @@
         justify-content: center
 
     section.our-core-values .row .core-values-wrapper
-        left: calc(((100vw - 20px)/ -2) - 60px)
+        left: calc((100vw - 20px)/ -2)
         top: -80px
     section.our-core-values .row .core-values-wrapper img
         width: 193vw
     section.our-core-values .row h1
         text-align: left
         font-size: 45px
+    .about-header
+        height: 75vh
     //// SERVICES ////
     .services-header .services-header-pattern-wrapper
         left: calc((100vw - 500px)/ -2)
     .services-header-content
         margin-top: 10vh
-        @if 
     .services-header-content .col-lg-7 h1
         width: 100%
+        font-size: 70px
+    .services-header-content .col-md-6 p
+        font-size: 16px
+        line-height: 25px
     .services-header-content .s-header-img-wrapper
         width: 70vw
         left: -10px
+        padding-top: 80px
     .services-header
-        height: 100vh
-        max-height: 100vh
+        height: 1000px
+        max-height: 100%
     section.our-workflow .row .col-lg-3 .its-efficient-wrapper img, section.our-workflow .row .col-lg-3 .our-workflow-wrapper img
         width: 70%
     section.our-workflow .row .col-lg-5 .its-efficient-text p, section.our-workflow .row .col-lg-5 .our-workflow-text p
         font-size: 12px
         line-height: 18px
     section.our-workflow
-        height: 80vh
+        height: 1000px
         .row
             display: flex
             justify-content: center
@@ -750,6 +795,7 @@
         line-height: 20px
     section.our-core-values
         margin-top: 0
+        padding-top: 100px
     section.our-core-values .row h1
         font-size: 34px
     section.our-core-values .row .core-values-wrapper
@@ -765,7 +811,7 @@
         font-size: 14px
         margin-bottom: 40px
     .services-header-content .col-lg-7 h1
-        font-size: 34px
+        font-size: 45px
     .services-header-content .s-header-img-wrapper
         width: 100%
         margin-top: 30px
@@ -837,6 +883,16 @@
     .services-header .services-header-pattern-wrapper
         left: calc((100vw - 97%)/ -2)
         width: 100vw
+    .we-offer-services .col-md-3
+        padding: 5px
+    section.we-make .row .we-make-cards .wm-card
+        width: 250px
+    .about-header
+        height: 50vh!important
+    .about-header .header-content
+        height: 32vh
+    section.our-workflow .row .col-lg-5 .its-efficient-text
+        margin-top: 200px
 
 /*==========  Mobile First  ==========*/
 
