@@ -85,6 +85,8 @@
         height: 600px
     section.our-workflow
         height: 800px
+    .pain-points
+        height: 700px
 // 992px
 +media-breakpoint-down(md)
     .we-offer-services .col-md-3 .service-card
@@ -379,6 +381,11 @@
         flex-direction: column-reverse
         p
             margin-top: 40px
+    section.your-partner .row:nth-child(4) .info
+        height: 100%
+        p
+            margin-top: 40px
+            margin-left: 0
     .we-offer-services .row
         height: 100%
     .we-offer-services .col-md-3 .service-card
@@ -438,31 +445,40 @@
             font-size: 14px
     .pain-points .row
         height: 50vh
+    .pain-points
+        height: 600px
     .we-offer-services
-        margin-top: 20vh
         margin-bottom: 0
         padding-bottom: 0
     .pain-points h1
-        font-size: 38px
-        text-align: left
+        font-size: 45px
     .pain-points .row .col-md-12
         margin-top: 30px
     .pain-points p
         font-size: 16px
-        text-align: left
         width: 100%
+        line-height: 25px
     .outsouce-needs
         max-height: 100%
         height: 100%
     .outsouce-needs .row .col-md-6:last-child
         height: 100%
         margin-top: 100px
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
     section.we-make
         margin-top: 15vh
     .outsouce-needs .row .col-md-6:last-child h1
         font-size: 39px
     .outsouce-needs .row .col-md-6:last-child p
         font-size: 16px
+    .outsouce-needs .row .col-md-6:last-child h1
+        text-align: center
+        font-size: 54px
+    .outsouce-needs .row .col-md-6:last-child p
+        text-align: center
     section.we-make .row .we-make-cards .wm-card
         &:first-child
             background-position-x: -1800px
@@ -538,7 +554,7 @@
         text-align: left
         font-size: 45px
     .about-header
-        height: 75vh
+        height: 800px
     //// SERVICES ////
     .services-header .services-header-pattern-wrapper
         left: calc((100vw - 500px)/ -2)
@@ -567,10 +583,29 @@
         .row
             display: flex
             justify-content: center
+    header.contacts .row:nth-child(2) .contact-info
+        display: flex
+        flex-direction: column
+        .post-info
+            font-size: 30px
+            line-height: 40px
+        .phones-social
+            margin-top: 20px
+            .phones
+                p
+                    margin-top: 10px
+                    font-size: 30px
+            .social
+                margin-top: 50px
+                height: 100px
+                a
+                    height: 50%
+                    img
+                        margin-right: 50px
     .about-header .header-content p
         margin-top: 20px
     .terms-header
-        height: 50vh
+        height: 400px
     footer ul
         display: flex
         flex-direction: column
@@ -594,6 +629,27 @@
     footer ul li p
         font-size: 21px
         line-height: 29px
+    .mobile-mnu ul
+        align-items: center
+        margin-top: 40px
+        padding-left: 30px
+        li
+            font-size: 26px
+            margin: 20px 0
+    .mobile-mnu .social img
+        height: 20px
+    .mobile-mnu .social
+        width: 200px
+        margin-top: 50px
+    .mobile-mnu
+        display: flex
+        flex-direction: column
+        .logo-mobile
+            position: relative
+            width: 200px
+            top: 35px
+            left: 20px
+
 // 576px
 +media-breakpoint-down(xs)
     .we-offer-services .col-sm-6
@@ -629,12 +685,17 @@
     .mobile-mnu ul
         padding: 0
         li
-            font-size: 28px
+            font-size: 26px
             margin: 10px 0
     .mobile-mnu .social img
-        height: 17px
+        height: 24px
     .mobile-mnu .social
         margin-top: 10vh
+    .mobile-mnu .logo-mobile
+        display: flex
+        justify-content: center
+        width: 60%
+        left: -10px
     footer .copyright
         display: flex
         flex-direction: column
@@ -652,7 +713,7 @@
         font-size: 40px
         line-height: 50px
     a.get-obligation-btn
-        width: 80%
+        width: 100%
         font-size: 14px
         margin: 0
         padding: 13px 26px
@@ -669,7 +730,7 @@
         margin-left: 0
     .pain-points
         margin-top: 0
-        height: 60vh
+        height: 700px
         h1
             font-size: 34px
     a.get-obligation-btn
@@ -767,7 +828,7 @@
     .about-header .about-header-pattern-wrapper
         left: -176vw
     .about-header .header-content h1
-        font-size: 34px
+        font-size: 41px
         margin-top: 0
     .about-header .header-content p
         font-size: 15px
@@ -798,8 +859,11 @@
         padding-top: 100px
     section.our-core-values .row h1
         font-size: 34px
+        position: relative
+        z-index: 998
     section.our-core-values .row .core-values-wrapper
-        left: calc((100vw - 20px)/ -2)
+        left: calc((100vw + 20px)/ -2)
+        z-index: 1
     section.learn-more-about .visible p
         font-size: 14px
         line-height: 20px
@@ -811,14 +875,15 @@
         font-size: 14px
         margin-bottom: 40px
     .services-header-content .col-lg-7 h1
-        font-size: 45px
+        font-size: 42px
     .services-header-content .s-header-img-wrapper
         width: 100%
-        margin-top: 30px
+        margin-top: 0px
+        padding: 0
     section.our-workflow
         height: 1000px
         max-height: 2000px
-        margin-top: 100px
+        margin-top: 0
     section.our-workflow .row .col-lg-3 .its-efficient-wrapper, section.our-workflow .row .col-lg-3 .our-workflow-wrapper
         margin: 0
         display: flex
@@ -854,7 +919,7 @@
     section.services-desc .service-desc-card .visible-desc .icon-wrapper
         height: 39px
     section.services-desc .service-desc-card .visible-desc .title p
-        width: 100px
+        width: 130px
     section.services-desc .active .visible-desc
         padding: 0
     section.services-desc .active .invisible-desc
@@ -888,11 +953,36 @@
     section.we-make .row .we-make-cards .wm-card
         width: 250px
     .about-header
-        height: 50vh!important
+        height: 500px
     .about-header .header-content
         height: 32vh
     section.our-workflow .row .col-lg-5 .its-efficient-text
         margin-top: 200px
+    header.contacts .row:nth-child(2) .contact-info
+        .post-info
+            margin-top: 50px
+            font-size: 24px
+            line-height: 40px
+        .phones-social
+            margin-top: 20px
+            .phones
+                p
+                    margin-top: 10px
+                    font-size: 24px
+            .social
+                margin-top: 50px
+                height: 100px
+                a
+                    height: 50%
+                    img
+                        margin-right: 50px
+    .terms-header
+        height: 300px
+    .services-header-content .col-md-6 p
+        margin: 0
+        margin-top: 20px
+    .services-header-content .col-lg-7
+        align-items: flex-start
 
 /*==========  Mobile First  ==========*/
 

@@ -1,7 +1,7 @@
 $(document).ready(function () {
    // lottie animation
    $('.lottie').css('display', 'none');
-   if (window.location.href == "http://localhost:3000/") {
+   if (window.location.pathname == "/") {
       setTimeout(function () {
          let timer = setInterval(function () {
 
@@ -14,30 +14,13 @@ $(document).ready(function () {
          }, 500);
       }, 1800);
    }
-   if (window.location.href != "http://localhost:3000/") {
+   if (window.location.pathname != "/") {
       setTimeout(function () {
          $('.logo').css('display', 'none');
          $('.lottie').css('display', 'flex');
          $('.header-illustration-wrapper').animate({ 'opacity': 1, 'left': 0 }, 1500);
       }, 1000)
    }
-   // setTimeout(function () {
-   //    $('.logo').css('display', 'none');
-   //    $('.lottie').css('display', 'flex');
-   //    $('.header-illustration-wrapper').animate({'opacity': 1, 'left': 0}, 1500);
-   // }, 2000);
-
-
-   // setTimeout(function () {
-   //    $('.lottie').animate({ 'opacity': '0' }, 800);
-   // }, 5000);
-
-   // setTimeout(function () {
-   //    $('.main-container').animate({ 'opacity': '1' }, 1200);
-   //    $('.lottie').css({ 'display': 'none' });
-   //    $('html').css({ 'overflow-y': 'scroll'});
-   // }, 6000);
-
    //////////////////////////////////////////////////////////////
    ////// Services cards hover///////////////////////////////////
 
@@ -344,28 +327,6 @@ $(document).ready(function () {
    let i = 1;
    let leftPost = 0;
    let offset = 300;
-
-   // $('#rightArrow').mouseenter(function () {
-   //    let left = $('#weMakeCardsBlock').css('left');
-
-   //    $('#weMakeCardsBlock').animate({
-   //       'left': parseInt(left.substr(0, left.length - 2)) - 10 + 'px'
-   //    }, 100);
-
-   //    $(this).animate({
-   //       'margin-left': 10 + 'px'
-   //    }, 100);
-   // }).mouseleave(function () {
-   //    let left = $('#weMakeCardsBlock').css('left');
-
-   //    $('#weMakeCardsBlock').animate({
-   //       'left': parseInt(left.substr(0, left.length - 2)) + 10 + 'px'
-   //    }, 100);
-
-   //    $(this).animate({
-   //       'margin-left': 0 + 'px'
-   //    }, 100);
-   // });
 
    function wmCardsAnimation() {
       $('#rightArrow').off('click');
@@ -693,6 +654,66 @@ $(document).ready(function () {
    $('.service-desc-card').removeClass('active');
    $('.invisible-desc').css('display', 'none');
 
+   // $('.services-footer li a').click(function () {
+   //    location.reload();
+   // });
+
+
+   if (window.location.hash == '#b2b') {
+      $('.service-desc-card:nth-child(1)').addClass('active');
+      $('.service-desc-card:nth-child(1)').css('background-image', 'none');
+      $('#desc1').css('display', 'flex');
+   }
+
+   if (window.location.hash == '#b2c') {
+      $('.service-desc-card:nth-child(2)').addClass('active');
+      $('.service-desc-card:nth-child(2)').css('background-image', 'none');
+      $('#desc2').css('display', 'flex');
+   }
+
+
+   if (window.location.hash == '#personal-assistant') {
+      $('.service-desc-card:nth-child(3)').addClass('active');
+      $('.service-desc-card:nth-child(3)').css('background-image', 'none');
+      $('#desc3').css('display', 'flex');
+   }
+
+
+   if (window.location.hash == '#telemarketing') {
+      $('.service-desc-card:nth-child(4)').addClass('active');
+      $('.service-desc-card:nth-child(4)').css('background-image', 'none');
+      $('#desc4').css('display', 'flex');
+   }
+
+
+   if (window.location.hash == '#tech-support') {
+      $('.service-desc-card:nth-child(5)').addClass('active');
+      $('.service-desc-card:nth-child(5)').css('background-image', 'none');
+      $('#desc5').css('display', 'flex');
+   }
+
+
+   if (window.location.hash == '#support-training') {
+      $('.service-desc-card:nth-child(6)').addClass('active');
+      $('.service-desc-card:nth-child(6)').css('background-image', 'none');
+      $('#desc6').css('display', 'flex');
+   }
+
+
+   if (window.location.hash == '#sales') {
+      $('.service-desc-card:nth-child(7)').addClass('active');
+      $('.service-desc-card:nth-child(7)').css('background-image', 'none');
+      $('#desc7').css('display', 'flex');
+   }
+
+   if (window.location.hash == '#customer-success') {
+      $('.service-desc-card:nth-child(8)').addClass('active');
+      $('.service-desc-card:nth-child(8)').css('background-image', 'none');
+      $('#desc8').css('display', 'flex');
+   }
+
+   // location.reload();
+
 
    $('#openDescSymbol1').click(function () {
       if (!$('#desc1').is(':visible')) {
@@ -700,6 +721,7 @@ $(document).ready(function () {
          $('.service-desc-card:nth-child(1)').css('background-image', 'none');
          $('#desc1').css('display', 'flex');
       } else {
+         console.log('clecked');
          $('.service-desc-card:nth-child(1)').removeClass('active');
          $('#desc1').css('display', 'none');
          $('.service-desc-card:nth-child(1)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
@@ -862,45 +884,6 @@ $(document).ready(function () {
       }
    });
 
-   // // ipad pro - ipad mini height problem
-   // if ($(window).width() <= 1024) {
-   //    if ($(window).height() <= 960 && $(window).width() <= 1024) {
-   //       $('.services-header').css({ 'max-height': '100vh' });
-   //       if($(window).height() <= 960 && $(window).height() >= 768) {
-   //          $('.services-header').css({ 'max-height': '200vh' });
-   //       }
-   //       if ($(window).height() <= 960 && $(window).width() <= 1024 && $(window).height() >= 360 && $(window).width() >= 960) {
-   //          $('.services-header').css({ 'max-height': '200vh' });
-   //       }
-   //    } else {
-   //       $('.services-header').css({ 'max-height': '70vh' });
-   //    }
-   // }
-
-   // if ($(window).height() > 768) {
-   //    if ($(window).height() > 1024) {
-   //       $('.services-header').css({ 'max-height': '55vh' });
-   //    } else {
-   //       $('.services-header').css({ 'max-height': '70vh' });
-   //       if ($(window).height() >= 800) {
-   //          $('.services-header').css({ 'max-height': '90vh' });
-   //       }
-   //       if ($(window).width() < 1024) {
-   //          $('.services-header').css({ 'max-height': '55vh' });
-   //       }
-   //       if ($(window).width() < 1024 && $(window).height() >= 800) {
-   //          $('.services-header').css({ 'max-height': '90vh' });
-   //       }
-   //    }
-   // }
-
-   // // resize
-   // if ($(window).height() > 1080) {
-   //    $('.about-header').css('height', '50vh');
-   // }
-   // else {
-   //    $('.about-header').css('height', '100vh');
-   // }
    if ($(window).width() <= 1200) {
       $('.our-core-values .core-values-wrapper img').attr('src', './img/_src/about-page/our-core-values-tablet.png');
    }
@@ -911,56 +894,6 @@ $(document).ready(function () {
    }
 
    $(window).resize(function () {
-      // if ($(window).height() > 1080) {
-      //    $('.about-header').css('height', '50vh');
-      // }
-      // else {
-      //    $('.about-header').css('height', '100vh');
-      // }
-
-      //////////////////////////////////////////
-      ///// ABOUT PAGE | Change img src/////////
-
-      if ($(window).width() <= 1200) {
-         $('.our-core-values .core-values-wrapper img').attr('src', './img/_src/about-page/our-core-values-tablet.png');
-      }
-
-      if ($(window).width() <= 768) {
-         $('.our-core-values .core-values-wrapper img').attr('src', './img/_src/about-page/our-core-values-mob.png');
-      }
-
-      ///////////////END/////////////////////////////
-
-      // // ipad pro - ipad mini height problem
-      // if ($(window).width() <= 1024) {
-      //    if ($(window).height() <= 960 && $(window).width() <= 1024) {
-      //       $('.services-header').css({ 'max-height': '100vh' });
-      //       if($(window).height() <= 960 && $(window).height() >= 768) {
-      //          $('.services-header').css({ 'max-height': '200vh' });
-      //       }
-      //       if ($(window).height() <= 960 && $(window).width() <= 1024 && $(window).height() >= 360 && $(window).width() >= 960) {
-      //          $('.services-header').css({ 'max-height': '200vh' });
-      //       }
-      //    } else {
-      //       $('.services-header').css({ 'max-height': '70vh' });
-      //    }
-      // }
-      // if ($(window).height() > 768) {
-      //    if ($(window).height() > 1024) {
-      //       $('.services-header').css({ 'max-height': '55vh' });
-      //    } else {
-      //       $('.services-header').css({ 'max-height': '70vh' });
-      //       if ($(window).height() >= 800) {
-      //          $('.services-header').css({ 'max-height': '90vh' });
-      //       }
-      //       if ($(window).width() < 1024) {
-      //          $('.services-header').css({ 'max-height': '55vh' });
-      //       }
-      //       if ($(window).width() < 1024 && $(window).height() >= 800) {
-      //          $('.services-header').css({ 'max-height': '90vh' });
-      //       }
-      //    }
-      // }
-
+      location.reload();
    });
 });
