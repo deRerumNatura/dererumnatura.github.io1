@@ -46,7 +46,8 @@ a:hover
 
 b, strong
 	font-weight: bold
-
+p
+	opacity: .98
 span.green
 	color: $green
 span.orange
@@ -62,17 +63,19 @@ body::-webkit-scrollbar
 .header-bcg-pattern
 	position: absolute
 	z-index: 10
-	width: 130vw
-	height: 200vh
-	max-height: 1000px
-	left: -12vw
+	width: 2500px
+	left: calc((100vw - 750px) / -2)
+	top: -450px
 	img
 		width: 100%
 		height: 100%
+		opacity: .8
 header
 	position: relative
 	z-index: 999
 	padding-top: 0
+	height: 100vh
+	max-height: 800px
 	nav
 		z-index: 1001
 		position: relative
@@ -118,13 +121,16 @@ header
 					&:hover
 						color: $background-dark
 						font-weight: bold
+	.row:last-child
+		margin-top: 8vh
 .left-side
 	width: 37vw
 	.main-text
-		margin-top: 80px
+		margin-top: 30px
 		line-height: 76px
 		h1
 			font-size: 66px
+			margin-bottom: 40px
 		p
 			line-height: 23px
 			font-size: 16px
@@ -170,16 +176,15 @@ a.get-obligation-btn
 		opacity: 0
 		width: 42vw
 		max-width: 600px
-		margin-top: 20px
 		img
 			width: 100%
 .your-partner-pattern-wrapper
 	position: absolute
 	z-index: 3
-	opacity: .5
-	width: 105vw
-	left: 0vw
-	top: 650px
+	opacity: .8
+	width: 3800px
+	left: calc((100vw + 1200px) / -2)
+	top: -150px
 	img
 		width: 100%
 		height: 80%
@@ -382,7 +387,7 @@ section.your-partner
 		height: 120vh
 		max-height: 1000px
 		width: 110vw
-		left: -20vw
+		left: calc((100vw - 1000px) / -2)
 		position: absolute
 		z-index: 5
 		opacity: .5
@@ -849,7 +854,6 @@ section.our-workflow
 			.its-efficient-text
 				margin-top: 100px
 
-
 section.services-desc
 	h1
 		font-size: 54px
@@ -862,12 +866,14 @@ section.services-desc
 		background-position-x: -4720px
 		background-position-y: -905px
 		width: 100%
+		// height: 110px
 		display: flex
 		border-radius: 30px
 		margin-bottom: 30px
 		flex-direction: column
 		transition: .5s
 		.visible-desc
+			height: 110px
 			display: flex
 			flex-direction: row
 			align-items: center
@@ -950,7 +956,7 @@ section.services-desc
 		border: $orange 2px solid
 		box-shadow: 0px 0px 2px $orange, 0px 0px 10px $orange
 		.visible-desc
-			margin-top: 40px	
+			margin-top: 40px
 			padding: 10px 100px 20px 20px
 			transition: .5s
 			.open-symbol
@@ -1012,9 +1018,11 @@ section.services-desc
 					color: $orange
 //// contacts////
 header.contacts
+	height: 100%
+	max-height: 100%
 	h1
 		font-size: 64px
-		margin-top: 50px
+		letter-spacing: .04em
 	p.contact-page-info
 		margin-top: 40px
 		margin-bottom: 60px
@@ -1029,7 +1037,7 @@ header.contacts
 			flex-direction: column
 			form
 				display: flex
-				flex-direction: column		
+				flex-direction: column
 				input, textarea
 					background: transparent
 					border-radius: 30px
@@ -1048,21 +1056,23 @@ header.contacts
 					padding-bottom: 20px
 					overflow: hidden
 			span.form-label
-					position: relative
-					top: -50px
-					left: 40px
-					background: $background-dark
-					width: 185px
-					text-align: center
-					letter-spacing: 0.04em
-					color: $white
-					&:nth-child(2)
-						width: 100px
-					&:nth-child(6)
-						width: 100px
-						position: absolute
-						top: 145px
-						left: 60px
+				position: relative
+				top: -50px
+				left: 40px
+				background: $background-dark
+				width: 185px
+				text-align: center
+				letter-spacing: 0.04em
+				color: $white
+				&:nth-child(2)
+					width: 90px
+				&:nth-child(4)
+					width: 60px
+				&:nth-child(6)
+					width: 80px
+					position: absolute
+					top: 145px
+					left: 60px
 			button
 				border-radius: 30px
 				border: none
@@ -1113,7 +1123,7 @@ header.contacts
 	position: absolute
 	z-index: 1
 	background-repeat: no-repeat
-	background-position-y: 80px 
+	background-position-y: 80px
 	opacity: .5
 
 .terms-header
@@ -1143,5 +1153,13 @@ footer ul li:hover p
 	color: $white
 .we-offer-services .col-md-3 .service-card:hover a
 	margin-right: 10px
+.from-title
+	width: 80%
+	font-size: 25px
+	margin-bottom: 30px
+	letter-spacing: .04em
+	font-weight: 600
+	line-height: 29px
+
 @import "media"
 // Always at the end
