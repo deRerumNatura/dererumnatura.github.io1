@@ -1,22 +1,17 @@
 $(document).ready(function () {
    // lottie animation
    $('.lottie').css('display', 'none');
-   if (window.location.pathname == "/") {
 
-      setTimeout(function () {
-         $('.logo').css('display', 'none');
-         $('.lottie').css('display', 'flex');
-         $('.header-illustration-wrapper').animate({ 'opacity': 1, 'left': 0 }, 1500);
-      }, 2000)
+   setTimeout(function () {
+      $('.logo').css('display', 'none');
+      $('.lottie').css('display', 'flex');
+      $('.header-illustration-wrapper').animate({ 'opacity': 1, 'left': 0 }, 1500);
 
-   }
-   if (window.location.pathname != "/") {
-      setTimeout(function () {
-         $('.logo').css('display', 'none');
-         $('.lottie').css('display', 'flex');
+      if ($('.s-header-img-wrapper').height() != 0) {
          $('.s-header-img-wrapper').animate({ 'opacity': 1 }, 1500);
-      }, 1000)
-   }
+      }
+   }, 2000)
+
    //////////////////////////////////////////////////////////////
    ////// Services cards hover///////////////////////////////////
 
@@ -931,17 +926,4 @@ $(document).ready(function () {
          }
       }
    });
-
-   if ($(window).width() <= 1200) {
-      $('.our-core-values .core-values-wrapper img').attr('src', './img/_src/about-page/our-core-values-tablet.png');
-   }
-
-   if ($(window).width() <= 768) {
-      console.log('this');
-      $('.our-core-values .core-values-wrapper img').attr('src', './img/_src/about-page/test-01.svg');
-   }
-
-   // $(window).resize(function () {
-   //    location.reload();
-   // });
 });
