@@ -5,8 +5,10 @@
 
 // 1200px
 +media-breakpoint-down(lg)
-    section.our-core-values .row .core-values-wrapper img
-        content: url(../img/_src/about-page/our-core-values-tablet.png)
+    section.our-core-values .row .core-values-wrapper img:nth-child(1)
+        display: none
+    section.our-core-values .row .core-values-wrapper img:nth-child(2)
+        display: flex
     html, body
         overflow-x: hidden
     header
@@ -54,9 +56,6 @@
             margin-top: 300px
     .about-header
         height: 700px
-    .core-values-wrapper
-        img
-            content: attr(src, './img/_src/about-page/our-core-values-tablet.png')
     section.our-core-values .row h1
         font-size: 50px
     section.our-core-values .row .core-values-wrapper
@@ -66,7 +65,8 @@
         max-height: 100%
     //// SERVICES ///////I
     .services-header .services-header-pattern-wrapper
-        left: calc((100vw - 911px)/ -2)
+        left: calc((170vw - 911px)/ -2)
+        top: -200px
     .services-header-content .s-header-img-wrapper
         left: -123px
         top: 0
@@ -259,7 +259,7 @@
 
     //// SERVICES ///////I
     .services-header .services-header-pattern-wrapper
-        left: calc((100vw - 650px)/ -2)
+        left: calc((150vw - 650px)/ -2)
     .services-header-content .col-lg-7 h1
         font-size: 46px
         width: 360px
@@ -307,10 +307,21 @@
     .your-partner-pattern-wrapper
         width: 2000px
         left: calc((100vw + 259px)/ -2)
-
+    .subscribe-btn-wrapper
+        display: flex
+        justify-content: flex-end
+    .form-title
+        margin-bottom: 10px
+    nav
+        position: relative
         
 // 768px
 +media-breakpoint-down(sm)
+    .lottie
+        top: 0px
+        position: relative
+    nav
+        position: relative
     header
         height: 1200px
         max-height: 100%
@@ -334,7 +345,7 @@
         position: absolute
         z-index: 1001
         right: 60px
-        top: 80px
+        top: 69px
         span
             height: 2px
             width: 50px
@@ -574,18 +585,18 @@
             width: 100%
             margin-top: 50px
     //// ABOUT ////
-    section.our-core-values .row .core-values-wrapper img
-        content: url(../img/_src/about-page/test-01.svg)
+    section.our-core-values .row .core-values-wrapper img:nth-child(2)
+        display: none
+    section.our-core-values .row .core-values-wrapper img:nth-child(3)
+        display: flex
+        width: 700px
     section.our-vison-mission .row .col-lg-3
         display: flex
         align-items: center
         justify-content: center
-
     section.our-core-values .row .core-values-wrapper
-        left: calc((100vw - 400px)/ -2)
+        left: -10vw
         top: -250px
-    section.our-core-values .row .core-values-wrapper img
-        width: 120vw
     section.our-core-values .row h1
         text-align: left
         font-size: 45px
@@ -593,7 +604,10 @@
         height: 800px
     //// SERVICES ////
     .services-header .services-header-pattern-wrapper
-        left: calc((100vw - 500px)/ -2)
+        left: calc((200vw - 500px)/ -2)
+        width: 300vw
+        top: -80px
+        transform: rotate(15deg)
     .services-header-content
         margin-top: 10vh
     .services-header-content .col-lg-7 h1
@@ -690,12 +704,30 @@
         &:hover
             padding-right: 20px
     .service-desc-card:nth-child(7)
-        img
+        .visible-desc img
             width: 130%
             height: 75%!important
+    section.services-desc .service-desc-card .service-desc-pattern-wrapper img
+        width: 1000px
+        left: -365px
+    section.services-desc .service-desc-card .visible-desc
+        margin-left: 30px
+        width: 95%
+    .subscribe-btn-wrapper
+        display: flex
+        justify-content: flex-end
+    section.our-core-values .row .core-values-wrapper img:nth-child(2)
+        display: none
+    section.our-core-values .row .core-values-wrapper img:nth-child(3)
+        display: flex
 
 // 576px
 +media-breakpoint-down(xs)
+    section.services-desc .service-desc-card .service-desc-pattern-wrapper
+        left: 0
+    section.services-desc .service-desc-card .visible-desc
+        margin-left: 20px
+        width: 85%
     .subscribe .form-label
         left: 56px
     header
@@ -712,7 +744,7 @@
     header nav .logo img
         height: 60%
     .burder-mnu
-        top: 32px
+        top: 40px
         right: 27px
         span
             width: 40px
@@ -829,7 +861,7 @@
     .we-offer-services .col-md-3 .service-card .icon-wrapper
         width: 42px
     .we-offer-services .col-md-3 .service-card:hover .service-description
-        font-size: 10px
+        font-size: 13px
     .we-offer-services .col-md-3 .service-card:hover .service-title
         font-size: 18px
         width: 80px
@@ -915,7 +947,6 @@
         position: relative
         z-index: 998
     section.our-core-values .row .core-values-wrapper
-        left: calc((100vw - 250px)/ -2)
         z-index: 1
         top: -190px
     section.learn-more-about .visible p
@@ -972,8 +1003,14 @@
         margin: 0
     section.services-desc .service-desc-card .visible-desc .icon-wrapper
         height: 39px
+        width: auto
+        margin-right: 20px
+        margin-left: 0px
+    section.services-desc .service-desc-card:nth-child(7) .icon-wrapper
+        width: 40px
     section.services-desc .service-desc-card .visible-desc .title p
         width: 130px
+        font-size: 20px
     section.services-desc .active .visible-desc
         padding: 0
     section.services-desc .active .invisible-desc
@@ -984,6 +1021,7 @@
         line-height: 20px
     section.services-desc .active .visible-desc
         margin: 0
+        left: 40px
     section.services-desc .active .invisible-desc .respons span
         font-size: 15px
         margin-right: 0
@@ -1000,8 +1038,10 @@
     section.services-desc .service-desc-card
         background-position-x: -3739px
     .services-header .services-header-pattern-wrapper
-        left: calc((100vw - 97%)/ -2)
-        width: 100vw
+        left: calc((250vw - 97%)/ -2)
+        width: 350vw
+        top: 0px
+        transform: rotate(35deg)
     .we-offer-services .col-md-3
         padding: 5px
     section.we-make .row .we-make-cards .wm-card
@@ -1038,11 +1078,39 @@
     .services-header-content .col-lg-7
         align-items: flex-start
     .service-desc-card:nth-child(7)
-        img
+        .visible-desc img
             width: 110%
             height: 80%!important
     section.your-partner .info .img-wrapper
         width: 90%
+    section.our-core-values .row .core-values-wrapper img:nth-child(3)
+        width: 620px
+    section.our-core-values .row .core-values-wrapper
+        left: -100px
+        top: -250px
+
+@media only screen and (max-width : 470px)
+    section.our-core-values .row .core-values-wrapper img:nth-child(3)
+        width: 550px
+    .we-offer-services .col-md-3 .service-card:hover .service-description
+        font-size: 12px
+@media only screen and (max-width : 400px)
+    section.our-core-values .row .core-values-wrapper img:nth-child(3)
+        width: 500px
+    .we-offer-services .col-md-3 .service-card:hover .service-description
+        font-size: 11px
+@media only screen and (max-width : 360px)
+    section.our-core-values .row .core-values-wrapper img:nth-child(3)
+        width: 450px
+    section.our-core-values .row .core-values-wrapper
+        top: -100px
+        left: -90px
+    
+@media only screen and (max-width : 330px)
+    section.our-core-values .row .core-values-wrapper img:nth-child(3)
+        width: 420px
+
+
 
 /*==========  Mobile First  ==========*/
 
@@ -1057,8 +1125,7 @@
 +media-breakpoint-up(md)
 
 // ≤576px
-+media-breakpoint-up(sm)
-
++media-breakpoint-up(xs)
 
     
   

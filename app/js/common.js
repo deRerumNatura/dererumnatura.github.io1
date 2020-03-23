@@ -713,97 +713,113 @@ $(document).ready(function () {
    $('#openDescSymbol1').click(function () {
       if (!$('#desc1').is(':visible')) {
          $('.service-desc-card:nth-child(1)').addClass('active');
-         $('.service-desc-card:nth-child(1)').css('background-image', 'none');
+         $('.service-desc-card:nth-child(1) .service-desc-pattern-wrapper').css('display', 'none');
+         // $('.service-desc-card:nth-child(1)').css('background-image', 'none');
          $('#desc1').css('display', 'flex');
       } else {
          console.log('clecked');
+         $('.service-desc-card:nth-child(1) .service-desc-pattern-wrapper').css('display', 'flex');
          $('.service-desc-card:nth-child(1)').removeClass('active');
          $('#desc1').css('display', 'none');
-         $('.service-desc-card:nth-child(1)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
+         // $('.service-desc-card:nth-child(1)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
       }
    });
 
    $('#openDescSymbol2').click(function () {
       if (!$('#desc2').is(':visible')) {
          $('.service-desc-card:nth-child(2)').addClass('active');
-         $('.service-desc-card:nth-child(2)').css('background-image', 'none');
+         $('.service-desc-card:nth-child(2) .service-desc-pattern-wrapper').css('display', 'none');
+         // $('.service-desc-card:nth-child(2)').css('background-image', 'none');
          $('#desc2').css('display', 'flex');
       } else {
          $('.service-desc-card:nth-child(2)').removeClass('active');
+         $('.service-desc-card:nth-child(2) .service-desc-pattern-wrapper').css('display', 'flex');
          $('#desc2').css('display', 'none');
-         $('.service-desc-card:nth-child(2)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
+         // $('.service-desc-card:nth-child(2)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
       }
    });
 
    $('#openDescSymbol3').click(function () {
       if (!$('#desc3').is(':visible')) {
          $('.service-desc-card:nth-child(3)').addClass('active');
-         $('.service-desc-card:nth-child(3)').css('background-image', 'none');
+         $('.service-desc-card:nth-child(3) .service-desc-pattern-wrapper').css('display', 'none');
+         // $('.service-desc-card:nth-child(3)').css('background-image', 'none');
          $('#desc3').css('display', 'flex');
       } else {
          $('.service-desc-card:nth-child(3)').removeClass('active');
+         $('.service-desc-card:nth-child(3) .service-desc-pattern-wrapper').css('display', 'flex');
          $('#desc3').css('display', 'none');
-         $('.service-desc-card:nth-child(3)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
+         // $('.service-desc-card:nth-child(3)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
       }
    });
 
    $('#openDescSymbol4').click(function () {
       if (!$('#desc4').is(':visible')) {
          $('.service-desc-card:nth-child(4)').addClass('active');
+         $('.service-desc-card:nth-child(4) .service-desc-pattern-wrapper').css('display', 'none');
          $('#desc4').css('display', 'flex');
-         $('.service-desc-card:nth-child(4)').css('background-image', 'none');
+         // $('.service-desc-card:nth-child(4)').css('background-image', 'none');
       } else {
          $('.service-desc-card:nth-child(4)').removeClass('active');
+         $('.service-desc-card:nth-child(4) .service-desc-pattern-wrapper').css('display', 'flex');
          $('#desc4').css('display', 'none');
-         $('.service-desc-card:nth-child(4)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
+         // $('.service-desc-card:nth-child(4)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
       }
    });
 
    $('#openDescSymbol5').click(function () {
       if (!$('#desc5').is(':visible')) {
          $('.service-desc-card:nth-child(5)').addClass('active');
+         $('.service-desc-card:nth-child(5) .service-desc-pattern-wrapper').css('display', 'none');
          $('#desc5').css('display', 'flex');
-         $('.service-desc-card:nth-child(5)').css('background-image', 'none');
+         // $('.service-desc-card:nth-child(5)').css('background-image', 'none');
       } else {
          $('.service-desc-card:nth-child(5)').removeClass('active');
+         $('.service-desc-card:nth-child(5) .service-desc-pattern-wrapper').css('display', 'flex');
          $('#desc5').css('display', 'none');
-         $('.service-desc-card:nth-child(5)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
+         // $('.service-desc-card:nth-child(5)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
       }
    });
 
    $('#openDescSymbol6').click(function () {
       if (!$('#desc6').is(':visible')) {
          $('.service-desc-card:nth-child(6)').addClass('active');
+         $('.service-desc-card:nth-child(6) .service-desc-pattern-wrapper').css('display', 'none');
          $('#desc6').css('display', 'flex');
-         $('.service-desc-card:nth-child(6)').css('background-image', 'none');
+         // $('.service-desc-card:nth-child(6)').css('background-image', 'none');
       } else {
          $('.service-desc-card:nth-child(6)').removeClass('active');
+         $('.service-desc-card:nth-child(6) .service-desc-pattern-wrapper').css('display', 'flex');
          $('#desc6').css('display', 'none');
-         $('.service-desc-card:nth-child(6)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
+         // $('.service-desc-card:nth-child(6)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
       }
    });
 
    $('#openDescSymbol7').click(function () {
       if (!$('#desc7').is(':visible')) {
          $('.service-desc-card:nth-child(7)').addClass('active');
+         $('.service-desc-card:nth-child(7) .service-desc-pattern-wrapper').css('display', 'none');
          $('#desc7').css('display', 'flex');
-         $('.service-desc-card:nth-child(7)').css('background-image', 'none');
+         // $('.service-desc-card:nth-child(7)').css('background-image', 'none');
       } else {
          $('.service-desc-card:nth-child(7)').removeClass('active');
+         $('.service-desc-card:nth-child(7) .service-desc-pattern-wrapper').css('display', 'flex');
          $('#desc7').css('display', 'none');
-         $('.service-desc-card:nth-child(7)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
+         // $('.service-desc-card:nth-child(7)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
       }
    });
 
    $('#openDescSymbol8').click(function () {
       if (!$('#desc8').is(':visible')) {
          $('.service-desc-card:nth-child(8)').addClass('active');
+         $('.service-desc-card:nth-child(8) .service-desc-pattern-wrapper').css('display', 'none');
          $('#desc8').css('display', 'flex');
-         $('.service-desc-card:nth-child(8)').css('background-image', 'none');
+         // $('.service-desc-card:nth-child(8)').css('background-image', 'none');
       } else {
          $('.service-desc-card:nth-child(8)').removeClass('active');
+         $('.service-desc-card:nth-child(8) .service-desc-pattern-wrapper').css('display', 'flex');
          $('#desc8').css('display', 'none');
-         $('.service-desc-card:nth-child(8)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
+         // $('.service-desc-card:nth-child(8)').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
       }
    });
 
@@ -860,7 +876,8 @@ $(document).ready(function () {
 
       $('.service-desc-card').removeClass('active');
       $('.invisible-desc').css('display', 'none');
-      $('.service-desc-card').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
+      $('.service-desc-card .service-desc-pattern-wrapper').css('display', 'flex');
+      // $('.service-desc-card').css('background-image', 'url(../img/_src/services-page/services-desc-pattern-01.svg)');
 
    });
 
@@ -925,5 +942,38 @@ $(document).ready(function () {
             }, 800);
          }
       }
+   });
+   setTimeout(function () {
+      if ($(window).width() <= 768 && $('.core-values-wrapper img:nth-child(3)').height() < 10) {
+         location.reload();
+      }
+   }, 2000);
+
+   $(window).on('resize', function () {
+      if ($(window).width() <= 768) {
+         $('nav').css({
+            'position': 'relative',
+            'padding': 0,
+            'margin-top': '60px',
+            'background': 'transparent'
+         });
+
+         $('header').css({
+            'padding-top': '0px',
+         }, 800);
+      }
+
+      if ($(window).width() <= 576) {
+         $('nav').css({
+            'position': 'relative',
+            'padding': 0,
+            'margin-top': '30px',
+            'background': 'transparent'
+         });
+
+         $('header').css({
+            'padding-top': '0px',
+         }, 800);
+      }      
    });
 });

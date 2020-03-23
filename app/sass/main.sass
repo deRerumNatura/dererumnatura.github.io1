@@ -706,6 +706,10 @@ section.our-core-values
 			img
 				height: 100%
 				width: 105vw
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					display: none
 .learn-more-btn
 	position: relative
 	z-index: 999
@@ -781,10 +785,10 @@ nav
 	.services-header-pattern-wrapper
 		position: absolute
 		z-index: 1
-		left: calc((100vw - 1110px) / -2)
+		left: calc((170vw - 1110px) / -2)
 		opacity: .5
-		width: 100vw
-		top: 0
+		width: 200vw
+		top: -500px
 		img
 			width: 100%
 .services-header-content
@@ -863,22 +867,27 @@ section.services-desc
 		margin-bottom: 100px
 
 	.service-desc-card
-		background-image: url(../img/_src/services-page/services-desc-pattern-01.svg)
-		background-size: 1500px
-		background-position-x: -4720px
-		background-position-y: -905px
+		// background-image: url(../img/_src/services-page/test.svg)
+		// background-size: 1500px
+		// background-position-x: -4720px
+		// background-position-y: -905px
 		width: 100%
-		// height: 110px
 		display: flex
 		border-radius: 30px
 		margin-bottom: 30px
 		flex-direction: column
-		transition: .5s
+		transition: .4s
+		background-color: $background-dark
+		position: static
+		z-index: 2
 		.visible-desc
-			height: 110px
+			height: 100px
 			display: flex
 			flex-direction: row
 			align-items: center
+			position: absolute
+			width: 100%
+			z-index: 3
 			.icon-wrapper
 				height: 60px
 				width: 60px
@@ -897,6 +906,7 @@ section.services-desc
 				position: absolute
 				right: 50px
 				cursor: pointer
+				z-index: 998
 				span
 					height: 3px
 					background: $orange
@@ -904,42 +914,82 @@ section.services-desc
 					&:last-child
 						margin-top: -3px
 						transform: rotate(90deg)
-		&:nth-child(1)
-			background-position-y: -905px
+		.service-desc-pattern-wrapper
+			border-radius: 30px
+			position: relative
+			height: 100px
+			width: 97%
+			// top: 100px
+			left: 20px
+			overflow: hidden
+			z-index: 1
+			img
+				position: absolute
+				top: -400px
+				left: -200px
+				width: 1500px
 		&:nth-child(2)
 			background-position-y: -1025px
+			.service-desc-pattern-wrapper
+				// top: 130px
+				img
+					top: -530px
 		&:nth-child(3)
 			background-position-y: -1151px
+			.service-desc-pattern-wrapper
+				// top: 260px
+				img
+					top: -660px
 			.icon-wrapper
 				height: 50px
 				width: 40px
 				margin: 30px
 		&:nth-child(4)
 			background-position-y: -1283px
+			.service-desc-pattern-wrapper
+				// top: 390px
+				img
+					top: -790px
 			.icon-wrapper
 				height: 50px
 				width: 40px
 				margin: 30px
 		&:nth-child(5)
 			background-position-y: -1421px
+			.service-desc-pattern-wrapper
+				// top: 520px
+				img
+					top: -920px
 			.icon-wrapper
 				height: 50px
 				width: 40px
 				margin: 30px
 		&:nth-child(6)
 			background-position-y: -1560px
+			.service-desc-pattern-wrapper
+				// top: 650px
+				img
+					top: -1050px
 			.icon-wrapper
 				height: 50px
 				width: 40px
 				margin: 30px
 		&:nth-child(7)
 			background-position-y: -1692px
+			.service-desc-pattern-wrapper
+				// top: 780px
+				img
+					top: -1180px
 			.icon-wrapper
 				height: 50px
 				width: 40px
 				margin: 30px
 		&:nth-child(8)
 			background-position-y: -1822px
+			.service-desc-pattern-wrapper
+				// top: 910px
+				img
+					top: -1310px
 			.icon-wrapper
 				height: 50px
 				width: 40px
@@ -951,7 +1001,7 @@ section.services-desc
 				width: 40px
 				margin: 30px
 	.active
-		transition: .5s
+		// transition: .5s
 		display: flex /////
 		color: $orange
 		flex-wrap: wrap
@@ -960,7 +1010,6 @@ section.services-desc
 		.visible-desc
 			margin-top: 40px
 			padding: 10px 100px 20px 20px
-			transition: .5s
 			.open-symbol
 				right: 80px
 				span
@@ -973,7 +1022,7 @@ section.services-desc
 		.invisible-desc
 			display: none
 			transition: .5s
-			padding: 10px 100px 60px 100px
+			padding: 120px 100px 60px 100px
 			display: flex
 			flex-direction: column
 			align-items: center
@@ -1071,9 +1120,6 @@ header.contacts
 					width: 60px
 				&:nth-child(6)
 					width: 80px
-					position: absolute
-					top: 145px
-					left: 60px
 			button
 				border-radius: 30px
 				border: none
@@ -1157,7 +1203,7 @@ footer ul li:hover p
 .form-title
 	width: 100%
 	font-size: 16px
-	margin-bottom: 30px
+	margin-bottom: 45px
 	letter-spacing: .04em
 	font-weight: 600
 	line-height: 29px

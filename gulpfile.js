@@ -19,14 +19,14 @@ var gulp          = require('gulp'),
 
 // Local Server
 gulp.task('browser-sync', function() {
-	browserSync({
+	browserSync.init({
 		server: {
 			baseDir: 'app'
 		},
-		notify: false,
-		open: false,
-		online: false, // Work Offline Without Internet Connection
-		tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
+		// notify: false,
+		// open: false,
+		// online: false, // Work Offline Without Internet Connection
+		// tunnel: true, tunnel: "projectnamed", // Demonstration page: http://projectnamed.localtunnel.me
 	})
 });
 
@@ -109,7 +109,7 @@ if (gulpVersion == 3) {
 		gulp.watch('app/*.html', ['code']);
 		gmWatch && gulp.watch('app/img/_src/**/*', ['img']);
 	});
-	gulp.task('default', ['watch']);
+	gulp.task('default', ['watch', 'serve']);
 
 };
 
