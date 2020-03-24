@@ -26,6 +26,27 @@
 </head>
 
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v6.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=install_email page_id="111284850440293" theme_color="#f07c28">
+    </div>
     <div class="burder-mnu" id="burger">
         <span></span>
         <span></span>
@@ -132,7 +153,8 @@
                     <div class="service-desc-card active">
                         <a name="b2b"></a>
                         <div class="service-desc-pattern-wrapper">
-                            <img id="servceDescPattern1" src="./img/_src/services-page/services-desc-pattern-01.svg" alt="">
+                            <img id="servceDescPattern1" src="./img/_src/services-page/services-desc-pattern-01.svg"
+                                alt="">
                         </div>
                         <div class="visible-desc">
                             <div class="icon-wrapper">
@@ -176,7 +198,8 @@
                     <div class="service-desc-card active">
                         <a name="b2c"></a>
                         <div class="service-desc-pattern-wrapper">
-                            <img id="servceDescPattern1" src="./img/_src/services-page/services-desc-pattern-01.svg" alt="">
+                            <img id="servceDescPattern1" src="./img/_src/services-page/services-desc-pattern-01.svg"
+                                alt="">
                         </div>
                         <div class="visible-desc">
                             <div class="icon-wrapper">
@@ -511,17 +534,17 @@
                 <li><a href="./terms-of-use.html">Terms of Use</a></li>
                 <li><a href="./privacy-policy.html">Privacy Policy</a></li>
                 <li><a href="./services.html">Services</a>
-                        <ul class="f-services services-footer">
-                            <li><a href="./services.html#b2b">B2B</a></li>
-                            <li><a href="./services.html#b2c">B2C</a></li>
-                            <li><a href="./services.html#personal-assistant">Personal Assistant</a></li>
-                            <li><a href="./services.html#telemarketing">Telemarketing</a></li>
-                            <li><a href="./services.html#tech-support">Tech support</a></li>
-                            <li><a href="./services.html#support-training">Support Training</a></li>
-                            <li><a href="./services.html#sales">Sales</a></li>
-                            <li><a href="./services.html#customer-success">Customer Success</a></li>
-                        </ul>
-                    
+                    <ul class="f-services services-footer">
+                        <li><a href="./services.html#b2b">B2B</a></li>
+                        <li><a href="./services.html#b2c">B2C</a></li>
+                        <li><a href="./services.html#personal-assistant">Personal Assistant</a></li>
+                        <li><a href="./services.html#telemarketing">Telemarketing</a></li>
+                        <li><a href="./services.html#tech-support">Tech support</a></li>
+                        <li><a href="./services.html#support-training">Support Training</a></li>
+                        <li><a href="./services.html#sales">Sales</a></li>
+                        <li><a href="./services.html#customer-success">Customer Success</a></li>
+                    </ul>
+
                 </li>
                 <li><a href="./contacts.html">Contact Us
                         <p> 29 Hamered Street</br>
@@ -538,17 +561,17 @@
                 <div class="info"> ©2020 Teleaders LTD. All Rights Reserved.</div>
                 <div class="social">
                     <a class="facebook" href="https://www.facebook.com/teleaders/">
-						<img src="./img/_src/contact-icons/fb.svg" alt="teleaders-facebook">
-					</a>
-					<a class="linkedin" href="https://www.linkedin.com/company/teleaders/">
-						<img src="./img/_src/contact-icons/linkedin.svg" alt="teleaders-linkedin">
-					</a>
-					<a class="instagram" href="https://www.instagram.com/teleaders/">
-						<img src="./img/_src/contact-icons/inst.svg" alt="teleaders-instagram">
-					</a>
-					<a class="twitter" href="https://twitter.com/TeleadersLtd">
-						<img src="./img/_src/contact-icons/twitter.svg" alt="teleaders-twitter">
-					</a>
+                        <img src="./img/_src/contact-icons/fb.svg" alt="teleaders-facebook">
+                    </a>
+                    <a class="linkedin" href="https://www.linkedin.com/company/teleaders/">
+                        <img src="./img/_src/contact-icons/linkedin.svg" alt="teleaders-linkedin">
+                    </a>
+                    <a class="instagram" href="https://www.instagram.com/teleaders/">
+                        <img src="./img/_src/contact-icons/inst.svg" alt="teleaders-instagram">
+                    </a>
+                    <a class="twitter" href="https://twitter.com/TeleadersLtd">
+                        <img src="./img/_src/contact-icons/twitter.svg" alt="teleaders-twitter">
+                    </a>
                 </div>
             </div>
         </footer>

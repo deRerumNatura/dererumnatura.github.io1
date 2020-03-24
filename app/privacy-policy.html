@@ -26,6 +26,27 @@
 </head>
 
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v6.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=install_email page_id="111284850440293" theme_color="#f07c28">
+    </div>
     <div class="burder-mnu" id="burger">
         <span></span>
         <span></span>
@@ -89,82 +110,97 @@
         <section class="terms">
             <div class="row">
                 <div class="col-lg-12">
-                    <p><b>Worldwide Call Centers, Inc. is committed to protecting your privacy and providing you with a
-                            safe online experience. If you have questions or comments on our Privacy Policy, please
-                            contact us in writing at: Worldwide Call Centers, Inc., 14960 Woodcarver Road, Suite 200,
-                            Colorado Springs, CO 80921 USA or via email: inquiries@worldwidecallcenters.com</b></p>
-                    <p>This Policy applies to any of Worldwide Call Centers websites and governs data collection and
-                        usage on our sites only.</p>
-                    <p>Our privacy policy does not apply to the privacy policy of agencies we may connect you with, nor
-                        does it apply to websites you may access from our websites. Each Agency within the Worldwide
-                        Network of Agencies and/or links to other websites found within our websites have their own
-                        Privacy Policies and are not controlled by Worldwide Call Centers, Inc. We encourage you to
-                        review the privacy statements of said sites so that you can understand how those Websites
-                        collect, use and share your information. Worldwide Call Centers, Inc. is not responsible for the
-                        privacy statements or other content on websites outside of Worldwide Call Centers’ family of
-                        websites.
-                        <b>By using any of Worldwide Call Centers websites, you consent to our Privacy Policy and
-                            practices described in this statement.</b></p>
-                    <h4>Collection of your Information</h4>
-                    <p>Worldwide Call Centers collects personally identifiable information on our website, from you,
-                        when you select the “Request a Quote”, “Request Information“, “Get Quotes” or any of our Contact
-                        Us sections and forms within our websites. When doing so, you are inquiring of our services to
-                        connect you with call center agencies in The Worldwide Call Center Network of agencies and
-                        authorize us to contact you in response to your request.</p>
-                    <p>The information you send within these requests is used by Worldwide Call Center Consultants to
-                        provide our services to you and may be used to gather “quotes” from our Network of Call Center
-                        Agencies to get you connected to the right agency with the right services. Because of the nature
-                        of our business while you may be required to disclose certain personal information to us in
-                        order to receive our services, Worldwide Call Centers and its representatives will continuously
-                        respect your privacy every step of the way with the utmost care.</p>
-                    <p>We also collect non-personally identifiable information to analyze trends, administer the
-                        website, track user movements and gather demographic information about our user base as a whole.
-                        This information may include, but is not limited to, your IP address, browser type, domain
-                        names, access times, pages visited while on our site, State and/or country from which you
-                        accessed the site, Internet service provider information, referring Web site addresses and more
-                        . This information is used by us for operation of services, maintaining quality of services, and
-                        to provide general statistics regarding use of our website. At no time do we “link” this
-                        information with personally identifiable information that you may submit to us.</p>
-                    <h4>Use of your Information</h4>
-                    <p>Worldwide Call Centers, Inc. collects and uses your personal information to operate our websites
-                        and deliver the services you have requested. Since the purpose of our business is to connect you
-                        with agencies that match your request for services, information submitted by you to aid in this
-                        purpose, will be owned by Worldwide Call Centers, Inc., and will also become the property of the
-                        Agencies in our Worldwide Network of Agencies who are referred to you to provide quotes or
-                        services. By placing a request to receive quotes, you accept this use of your information.</p>
-                    <p>We also reserve the right to use your personally identifiable information to inform you of other
-                        services that may become available from Worldwide Call Centers and its affiliates.
-                        Worldwide Call Centers, Inc. shares data with trusted partners to help us perform statistical
-                        analysis, send you email or postal mail, provide customer support, or arrange for deliveries.
-                        All such third parties are prohibited from using your personal information except to provide
-                        these services for us, and as such they are required to maintain the confidentiality of your
-                        information.</p>
-                    <p>We may also share aggregated demographic information about our user base with others. This
-                        information does not identify individual users. Worldwide Call Centers, Inc. never sells or
-                        releases company information to other parties unless it is directly related to matching a
-                        request to the Agencies in our Worldwide Network of Agencies.
-                        Worldwide Call Centers, Inc. reserves the right to disclose personally identifiable information
-                        as required by law, and when we believe that disclosure is necessary to protect our rights and
-                        to comply with judicial proceedings, court order or legal processes served on our family of
-                        Websites.</p>
-                    <h4>Cookies</h4>
-                    <p>Worldwide Call Centers Inc., reserves the right to use “cookies”. A cookie is a text file that is
-                        placed on your hard disk by a Web page server. Cookies cannot be used to run programs or deliver
-                        viruses to your computer. Cookies are uniquely assigned to you, and can only be read by a web
-                        server in the domain that issued the cookie to you.</p>
-                    <p>You have the ability to accept or decline cookies. Most Web browsers automatically accept
-                        cookies, but you can usually modify your browser setting to decline cookies if you prefer. If
-                        you choose to decline cookies, you may not be able to fully experience the interactive features
-                        of our website services nor other websites you may visit.</p>
-                    <h4>Changes to our Privacy Policy</h4>
-                    <p>Worldwide Call Centers, Inc. reserves the right to amend our Privacy Policy at any time. Please
-                        review it frequently.</p>
+                    <p>Teleaders is dedicated to protecting the privacy of our customers. This privacy policy contains
+                        crucial information about how we collect and use your data including what we do to ensure that
+                        all confidential information shared by those who visit Teleaders.com, subdomains of this
+                        website, applications or clients who use products and services owned and operated by
+                        Teleader.com (“we,” “company,” “Teleaders.com” “website”). The privacy policy governs the use of
+                        the Teleaders website, mobile applications, products, and services. This Privacy Policy is a
+                        contract between you (“you,” “user,” or “client”) and Teleaders (“we,” “company,”
+                        “Teleaders.com,” “website”). Please read the Terms of Service and Privacy Policy before using
+                        our site, apps, services, and products.</p>
+                    <p style="text-transform: uppercase;">BY YOUR CONTINUOUS USE OF THE WEBSITE, SERVICES, APPLICATIONS,
+                        PRODUCTS, AND SERVICE, YOU
+                        AUTOMATICALLY AGREE TO THIS PRIVACY POLICY. TELEADERS MAY CHANGE THIS TERMS OF SERVICES, WITHOUT
+                        ANY OBLIGATIONS TO SEND NOTIFICATIONS OR INFORM YOU (“USER,” OR “CLIENT) ABOUT THESE CHANGES.
+                    </p>
+                    <p>If Teleaders make any clause in these Privacy Policy invalid, the remaining clauses remain fully
+                        applicable, and Teleaders and the client may replace the invalid clause with another phrase that
+                        reflects the purpose of the invalid clause. However, all modifications, changes, or adjustments
+                        to these terms of service remain the sole right of Teleaders.</p>
+                    <p>The products, services, applications, and all properties of Teleaders are not for persons under
+                        the age of 16, and we may unknowingly collect personal information when persons under 16 use or
+                        access our website. If you are aware of such actions and which to remove such information
+                        collected, please contact us using our contact information.</p>
+                    <h4>What Information We Collect</h4>
+                    <h5>Personal Information</h5>
+                    <p>Teleaders may collect individually identifiable information from you, including email addresses,
+                        physical addresses, telephone numbers, names (including company and individual names). We may
+                        also receive physical addresses, curriculum vitae (or resumes), tax ID numbers, fax numbers as
+                        well as all information but not limited regarding marketing contacts, technical contacts,
+                        executive contacts collected from candidates, users, companies, or organizations ( in contracts
+                        with Teleaders.com).
+                    </p>
+                    <h5>Non-Personal Information</h5>
+                    <p>Teleaders may collect individually identifiable information from you concerning the IP address,
+                        type of browser you use, your operating system, pages viewed on the website, duration of visits
+                        to the website, and Internet service provider (ISP), which may become connected with your
+                        personal information if you register with the website.
+                    </p>
+                    <p>We may also use third party services such as Google Analytics to acquire, monitor, and evaluate
+                        the information collected to improve our website, services, and applications.</p>
+                    <h5>Cookies</h5>
+                    <p>Cookies are small files from our website or other service providers’ transfers through your web
+                        browser to your computer’s hard drive to help our website recognize, capture, and remember
+                        specific information concerning you.</p>
+                    <p>Teleaders uses cookies and other similar technological tools to track user movements, gather
+                        demographic information, and analyze trends. You can regulate the use of cookies at your browser
+                        level by either disabling cookies or limiting your use of specific functions or features on our
+                        website, products, or services.</p>
+                    <h4>How We Use Information Collected</h4>
+                    <h5>Customer service</h5>
+                    <p>We may use the information we collect to respond more effectively to customer service requests
+                        and improve our products and services.</p>
+                    <h5>Promotional</h5>
+                    <p>We may use your information to provide relevant information concerning Teleaders products and
+                        service from time to time either by email, or other technological platforms as collected. If you
+                        do not wish to receive such promotional emails from us, you can do this by sending an email or
+                        using the unsubscribe link at the bottom of your emails.</p>
+                    <h5>Hiring Process</h5>
+                    <p>We may use your information, including contact details, job performance data, and identification
+                        data for the process of selecting or screening candidates to fulfill the legal title of the
+                        performance of the contract and implementation of pre-contract arrangements. Based on your
+                        consent, we may store all applicable data in our candidate database and process as per job
+                        selection processes. We may process data for up to 3 years after the end of the recruitment
+                        process. If you wish to withdraw your consent, you may do so by contacting … All data processing
+                        before revoking your consent remains valid.</p>
+                    <h5>Email notifications</h5>
+                    <p>We may use the information to provide periodic emails concerning updates and other related
+                        information to your usage in addition to similar product or service information and occasional
+                        company news.</p>
+                    <h5>Third-Party Operations</h5>
+                    <p>We may collaborate with a third party to manage our advertising on other websites. These
+                        third-partners may use cookies or associated tools to provide advertising based on your
+                        interests and browsing activities concerning our products and services. If you wish to opt-out
+                        of this option, please contact … However, we may continue to provide generic ads. </p>
                     <h4>Contact Information</h4>
-                    <p>Worldwide Call Centers Inc. welcomes your comments regarding this Policy. If you believe that we
-                        have not adhered to this Policy, please contact us via email:
-                        inquiries@worldwidecallcenters.com; or in writing at: Worldwide Call Centers, Inc., 14960
-                        Woodcarver Road, Suite 200, Colorado Springs, CO 80921 USA. We will use reasonable efforts to
-                        promptly determine and remedy any and all problems.</p>
+                    <p>We will strive to do everything possible to secure or protect your personal information. We do
+                        not share or sell any data or personal information collected. We do not also collect or share
+                        information that is not covered in our Privacy Policy.</p>
+                    <p>However, you must remember that no electronic transmission is 100% secure. Though we strive to
+                        protect your personal information by any means acceptable, we cannot guarantee absolute
+                        security.</p>
+                    <h4>How to Review your Information</h4>
+                    <p>You may contact us at any time to review, correct, update, or remove your personal information
+                        from our database. Please allow reasonable time to receive our response and provide assistance
+                        to the extent as required by law.</p>
+                    <h4>Disclaimer</h4>
+                    <p>We may disclose any personal information collected as required by law in compliance with a
+                        subpoena or other associated legal process, especially in situations to protect your safety or
+                        the safety of others, respond to a government request, or examine fraud.</p>
+                    <h4>Contact</h4>
+                    <p>If you have any questions or concerns regarding this privacy policy or other general information,
+                        you can send us an email at….</p>
                 </div>
             </div>
         </section>
@@ -201,17 +237,17 @@
                 <div class="info"> ©2020 Teleaders LTD. All Rights Reserved.</div>
                 <div class="social">
                     <a class="facebook" href="https://www.facebook.com/teleaders/">
-						<img src="./img/_src/contact-icons/fb.svg" alt="teleaders-facebook">
-					</a>
-					<a class="linkedin" href="https://www.linkedin.com/company/teleaders/">
-						<img src="./img/_src/contact-icons/linkedin.svg" alt="teleaders-linkedin">
-					</a>
-					<a class="instagram" href="https://www.instagram.com/teleaders/">
-						<img src="./img/_src/contact-icons/inst.svg" alt="teleaders-instagram">
-					</a>
-					<a class="twitter" href="https://twitter.com/TeleadersLtd">
-						<img src="./img/_src/contact-icons/twitter.svg" alt="teleaders-twitter">
-					</a>
+                        <img src="./img/_src/contact-icons/fb.svg" alt="teleaders-facebook">
+                    </a>
+                    <a class="linkedin" href="https://www.linkedin.com/company/teleaders/">
+                        <img src="./img/_src/contact-icons/linkedin.svg" alt="teleaders-linkedin">
+                    </a>
+                    <a class="instagram" href="https://www.instagram.com/teleaders/">
+                        <img src="./img/_src/contact-icons/inst.svg" alt="teleaders-instagram">
+                    </a>
+                    <a class="twitter" href="https://twitter.com/TeleadersLtd">
+                        <img src="./img/_src/contact-icons/twitter.svg" alt="teleaders-twitter">
+                    </a>
                 </div>
             </div>
         </footer>

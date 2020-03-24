@@ -26,6 +26,27 @@
 </head>
 
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v6.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=install_email page_id="111284850440293" theme_color="#f07c28">
+    </div>
     <div class="burder-mnu" id="burger">
         <span></span>
         <span></span>
@@ -124,6 +145,9 @@
                         <div class="phones">
                             <p class="telephone"><span class="orange">telephone: </span>+972 3 514-2830</p>
                             <p class="fax"><span class="orange">fax: </span>+972 3 514-2902</p>
+                        </div>
+                        <div class="contacts-logo">
+                            <img src="./img/_src/logo.svg" alt="">
                         </div>
                         <div class="social">
                             <a class="facebook" href="https://www.facebook.com/teleaders/">

@@ -26,6 +26,27 @@
 </head>
 
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v6.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=install_email page_id="111284850440293" theme_color="#f07c28">
+    </div>
     <div class="burder-mnu" id="burger">
         <span></span>
         <span></span>
@@ -255,17 +276,17 @@
                 <div class="info"> ©2020 Teleaders LTD. All Rights Reserved.</div>
                 <div class="social">
                     <a class="facebook" href="https://www.facebook.com/teleaders/">
-						<img src="./img/_src/contact-icons/fb.svg" alt="teleaders-facebook">
-					</a>
-					<a class="linkedin" href="https://www.linkedin.com/company/teleaders/">
-						<img src="./img/_src/contact-icons/linkedin.svg" alt="teleaders-linkedin">
-					</a>
-					<a class="instagram" href="https://www.instagram.com/teleaders/">
-						<img src="./img/_src/contact-icons/inst.svg" alt="teleaders-instagram">
-					</a>
-					<a class="twitter" href="https://twitter.com/TeleadersLtd">
-						<img src="./img/_src/contact-icons/twitter.svg" alt="teleaders-twitter">
-					</a>
+                        <img src="./img/_src/contact-icons/fb.svg" alt="teleaders-facebook">
+                    </a>
+                    <a class="linkedin" href="https://www.linkedin.com/company/teleaders/">
+                        <img src="./img/_src/contact-icons/linkedin.svg" alt="teleaders-linkedin">
+                    </a>
+                    <a class="instagram" href="https://www.instagram.com/teleaders/">
+                        <img src="./img/_src/contact-icons/inst.svg" alt="teleaders-instagram">
+                    </a>
+                    <a class="twitter" href="https://twitter.com/TeleadersLtd">
+                        <img src="./img/_src/contact-icons/twitter.svg" alt="teleaders-twitter">
+                    </a>
                 </div>
             </div>
         </footer>

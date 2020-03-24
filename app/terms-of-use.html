@@ -26,6 +26,27 @@
 </head>
 
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v6.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=install_email page_id="111284850440293" theme_color="#f07c28">
+    </div>
     <div class="burder-mnu" id="burger">
         <span></span>
         <span></span>
@@ -51,7 +72,7 @@
                 <a class="twitter" href="https://twitter.com/TeleadersLtd">
                     <img src="./img/_src/twitter.svg" alt="teleaders-twitter">
                 </a>
-			</div>
+            </div>
         </ul>
     </div>
     <div class="container">
@@ -63,10 +84,10 @@
                 <nav>
                     <div class="col-md-6 col-sm-12">
                         <div class="lottie">
-							<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_9Wyqz5.json"
-								background="transparent" speed="1" style="width: 160px; height: 55px;" autoplay>
-							</lottie-player>
-						</div>
+                            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_9Wyqz5.json"
+                                background="transparent" speed="1" style="width: 160px; height: 55px;" autoplay>
+                            </lottie-player>
+                        </div>
                         <div class="logo">
                             <img src="./img/_src/logo.svg" alt="Teleaders-logo">
                         </div>
@@ -89,169 +110,104 @@
         <section class="terms">
             <div class="row">
                 <div class="col-lg-12">
-                    <p>This Terms of Use Agreement governs your use of any of Worldwide Call Centers family of
-                        websites. By
-                        using the said websites you agree to these terms. If you do not agree with our Terms of Use
-                        Policy,
-                        you should immediately cease all usage of this website. Failure to do so constitutes your
-                        agreement
-                        to be legally bound by the terms and conditions set forth in these Terms of Use.</p>
-                    <p>We reserve the right, at any time, to modify, alter, or update the terms and conditions of
-                        this
-                        agreement without prior notice. Modifications shall become effective immediately upon being
-                        posted
-                        on website. Your continued use of our services after amendments are posted constitutes an
-                        acknowledgement and acceptance of the Terms and its modifications.</p>
-                    <h4>Our Services</h4>
-                    <p>Worldwide Call Centers Inc. is a call center outsourcing consulting company. We assist in
-                        analyzing
-                        the needs of each client and then initiate contact with the best 3-5 call centers for
-                        client’s
-                        specific application or campaign. Potential clients are given the opportunity to submit
-                        requests for
-                        quotes in various areas of our websites. Worldwide Call Centers will make every effort to
-                        accommodate said requests in a timely and confidential way.</p>
-                    <h4>Your Request</h4>
-                    <p>Client should provide current, complete, and accurate information about your business when
-                        completing
-                        a request for quotes. Worldwide Call Centers, Inc. consultants review each request placed
-                        through
-                        our family of websites to ensure its validity and respond in as timely a fashion as
-                        possible. We
-                        cannot guarantee that our consultants will be able to provide quotes for every request we
-                        receive or
-                        that agencies within the Worldwide Network of Agencies who do respond to your request can
-                        meet all
-                        of your requirements. We reserve the right to reject any request, for any reason or no
-                        reason,
-                        including, without limitation.</p>
-                    <p>By submitting a request for quotes, you agree to allow us to share the information you
-                        provide to us
-                        within our call center agencies.</p>
-                    <p>Your contact information will then be retained by us, however, except as set forth herein and
-                        in our
-                        Privacy Policy, we will not sell your information to any third parties. You may also receive
-                        communications from us to confirm your request, provide feedback or provide more information
-                        as
-                        deemed necessary.</p>
-                    <h4>Agencies We Work With</h4>
-                    <p>Worldwide Call Centers, Inc. makes every effort to ensure that we are dealing with reputable
-                        and
-                        professional agencies.</p>
-                    <h4>Links</h4>
-                    <p>Our websites may include links to other sites or resources for your convenience. You
-                        acknowledge that
-                        we are not responsible for the availability of, or the content located on or through, any
-                        third-party site. You should contact the site administrator or webmaster for those
-                        third-party sites
-                        if you have any concerns regarding such links or the content located on such sites. Your use
-                        of
-                        those third-party sites is subject to the terms of use and privacy policies of each site,
-                        and we are
-                        not responsible therein. We encourage all Users to review said privacy policies of
-                        third-parties’
-                        sites.</p>
-                    <h4>Compliance with Laws</h4>
-                    <p>You may not use our services in any way that violates applicable state, federal, or
-                        international laws, regulations or other government requirements. You further agree not to
-                        transmit any material that encourages conduct that could constitute a criminal offense, give
-                        rise to civil liability or otherwise violate any applicable local, state, national, or
-                        international law or regulations.</p>
-                    <h4>Prohibited Conduct</h4>
-                    <p>You may not use our services for any illegal purpose or for the transmission of any material
-                        that is unlawful, harassing, libelous, invasive of another person/businesses privacy,
-                        harmful, obscene, tortious, or otherwise objectionable, or that infringes or may infringe
-                        the intellectual property or other rights of another. You may not directly or indirectly,
-                        interfere or attempt to interfere with the proper working of our website, use any robot,
-                        spider, other automatic device, or manual process to monitor or copy our web pages or the
-                        content on our website without our prior expressed written permission.</p>
-                    <p>Furthermore, you agree to not take any action which imposes an unreasonable or
-                        disproportionately large load on our infrastructure, use or disclose any information you
-                        obtain from us if such information is confidential, conduct fraud, hide or attempt to hide
-                        your identity, represent yourself as someone else or use a false email address.</p>
-                    <h4>Copyright and Trademark Information</h4>
-                    <p>All content included or available on our websites, including site design, text, graphics,
-                        interfaces, and the selection and arrangements thereof is ©2014 Worldwide Call Centers, Inc.
-                        with all rights reserved. Said websites, copyrights and trademark information is the
-                        property of Worldwide Call Centers, Inc. and is protected by intellectual property rights.
+                    <p>Please read the terms of service carefully because it contains vital information regarding your
+                        rights as a client or user of our website. This Terms of Service (this client/user agreement) is
+                        a contract between you (“you” “user” or “client”) and Teleaders (“we,” “company,”
+                        “Teleaders.com” “website”). These terms of service govern your use of Teleader’s website, mobile
+                        applications, products, and services. Please read the Terms of Service and Privacy Policy before
+                        using our site, apps, services, and products. </p>
+                    <p>If Teleaders make any clause in these terms of services invalid, the remaining clauses remain
+                        fully applicable and Teleaders, and the client may replace the invalid clause with another
+                        phrase that reflects the purpose of the invalid clause. However, all modifications, changes, or
+                        adjustments to these terms of service remain the sole right of Teleaders.</p>
+                    <p style="text-transform: uppercase;">BY YOUR CONTINUOUS USE OF THE WEBSITE, SERVICES, APPLICATIONS,
+                        PRODUCTS AND SERVICE, YOU AUTOMATICALLY AGREE TO THESE TERMS OF SERVICE. TELEADERS MAY CHANGE
+                        THIS TERMS OF SERVICES, WITHOUT ANY OBLIGATIONS TO SEND NOTIFICATIONS OR INFORM YOU (“USER,” OR
+                        “CLIENT) ABOUT THESE CHANGES.
                     </p>
-                    <p>Any use of materials on the websites, including reproduction for purposes other than those
-                        noted above, modification, distribution, or replication, any form of data extraction or data
-                        mining, or other commercial exploitation of any kind, without prior written permission of an
-                        authorized officer of Worldwide Call Centers, Inc. is strictly prohibited.
+                    <h4>Offers, Orders, Quotations and Order Confirmations</h4>
+                    <p>No proposal or quotations from Teleaders bind the client until accepted by the client. The
+                        agreement becomes active as soon as the client returns the quotation, signs the contract, and
+                        without amendment within 30 days.
                     </p>
-                    <p>Any of our trademarks may not be used in connection with any product or service that is not
-                        provided by us, in any manner that is likely to cause confusion among customers, or in any
-                        manner that disparages or discredits Worldwide Call Centers, Inc.</p>
-                    <h4>Disclaimer of Warranties</h4>
-                    <p style="text-transform: uppercase;">YOU EXPRESSLY AGREE THAT YOUR USE OF OUR SERVICE IS AT
-                        YOUR OWN RISK AND THAT WORLDWIDECALLCENTERS.COM OR ANY OF ITS FAMILY OF WEBSITES, ARE
-                        AVAILABLE ON AN “AS IS” BASIS. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, WORLDWIDE
-                        CALL CENTERS, INC. MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED,
-                        REGARDING THE USE OR THE RESULTS OF THIS SITE IN TERMS OF ITS CORRECTNESS, ACCURACY,
-                        RELIABILITY OR OTHERWISE. WORLDWIDE CALL CENTERS MAKES NO WARRANTY AND SHALL HAVE NO
-                        LIABILITY FOR ANY INTERRUPTIONS IN THE USE OF OUR WEBSITE. WORLDWIDE CALL CENTERS, INC.
-                        DISCLAIMS ALL WARRANTIES WITH REGARD TO THE INFORMATION PROVIDED, INCLUDING THE IMPLIED
-                        WARRANTIES OF SERVICES FOR A PARTICULAR PURPOSE. ANY AND ALL INFORMATION ON WEBSITE IS
-                        SUBJECT TO CHANGE WITHOUT NOTICE.</p>
-                    <h4>Limitation of Liability</h4>
-                    <p style="text-transform: uppercase;">WORLDWIDE CALL CENTERS, INC. SHALL NOT BE LIABLE FOR ANY
-                        DAMAGES WHATSOEVER. IN PARTICULAR WORLDWIDE CALL CENTERS, INC. SHALL NOT BE LIABLE FOR ANY
-                        SPECIAL, INDIRECT, CONSEQUENTIAL, OR INCIDENTAL DAMAGES, OR DAMAGES FOR LOST PROFITS, LOSS
-                        OF REVENUE, OR LOSS OF USE, ARISING OUT OF OR RELATED TO THIS WEBSITE OR THE INFORMATION
-                        CONTAINED IN IT, OR THE INABILITY TO USE SAID WEBSITE, WHETHER SUCH DAMAGES ARISE IN
-                        CONTRACT, NEGLIGENCE, TORT, UNDER STATUTE, IN EQUITY, AT LAW, OR OTHERWISE, EVEN IF
-                        WORLDWIDE CALL CENTERS, INC. HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SOME
-                        JURISDICTIONS DO NOT ALLOW FOR THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR
-                        CONSEQUENTIAL DAMAGES, THEREFORE SOME OF THE ABOVE LIMITATIONS ARE INAPPLICABLE.</p>
-                    <h4>Indemnification</h4>
-                    <p>You agree to indemnify and hold harmless Worldwide Call Centers, Inc. its parents,
-                        subsidiaries, affiliates, directors, officers and employees from any claim or demand
-                        (including reasonable attorneys’ fees) made by any third party due to or arising out of your
-                        use of the Service (including in connection with any disputes between you and any agency),
-                        your violation of these Terms of Use, or your infringement of any intellectual property or
-                        other right of any person or entity.</p>
-                    <h4>Governing Jurisdiction</h4>
-                    <p>Our business is operated and provided in the State of South Dakota. As such, we are subject
-                        to the laws of the State of South Dakota, and such laws will govern this Terms of Use,
-                        without giving effect to any choice of law rules. We make no representation that our
-                        websites or other services are appropriate, legal or available for use in all locations.
-                        Accordingly, if you choose to access our site you agree to do so subject to the internal
-                        laws of the State of South Dakota. You agree to submit to the exclusive jurisdiction of the
-                        courts located in South Dakota with respect to any disputes.</p>
-                    <h4>Termination</h4>
-                    <p>If you breach any provision of the Terms of Use, you may no longer use our services. You may
-                        cease using our services at any time. Worldwide Call Centers, Inc. may, in its sole
-                        discretion, change, suspend, or terminate, temporarily or permanently, our websites or any
-                        part of them at any time, for any reason, without notice to you and without liability to you
-                        or any other person. If we choose to terminate the Terms of Use will continue to apply and
-                        bind you with respect to your prior use of our website.</p>
-                    <h4>Notification of Claimed Copyright Infringement</h4>
-                    <p>Pursuant to Section 512(c) of the Copyright Revision Act, as enacted through the Digital
-                        Millennium Copyright Act, Worldwide Call Centers, Inc. designates the following individual
-                        as its agent for receipt of notifications of claimed copyright infringement.</br>
-                        Mail: Worldwide Call Centers, Inc. • 14960 Woodcarver Road, Suite 200 • Colorado Springs, CO
-                        80921 USA</br>
-                        Email: inquiries@worldwidecallcenters.com</br>
-                        USA: 1.888.308.9675</br>
-                        International: +1.719.368.8393</br></p>
-                    <h4>Other Terms</h4>
-                    <p>If any provision of this Terms of Use Agreement shall be unlawful, void or unenforceable for
-                        any reason, the other provisions (and any partially-enforceable provision) shall not be
-                        affected thereby and shall remain valid and enforceable to the maximum possible extent. You
-                        agree that this Terms of Use Policy and any other agreements referenced herein may be
-                        assigned by Worldwide Call Centers Inc., in our sole discretion, to a third party in the
-                        event of a merger or acquisition. This Terms of Use Agreement shall apply in addition to,
-                        and shall not be superseded by, any other written agreement between us in relation to your
-                        participation as a User of our website.</p>
-                    <p>Nothing in these Terms of Use is intended to or will create any form of partnership, joint
-                        venture, agency, or employment relationship between the parties. You may not assign these
-                        Terms of Use, by operation of law or otherwise, without the prior written consent of
-                        Worldwide Call Centers Inc. The failure of either party to exercise or enforce any right or
-                        provision of the Terms of Use shall not constitute a waiver of such right or provision
-                        unless acknowledged and agreed to by such party in writing. If a court of competent
-                        jurisdiction declares any provision of these Terms of Use to be invalid or unenforceable,
-                        the remainder of these Terms of Use will continue in full force and effect.</p>
+                    <p>All orders placed or order confirmations previously issued by the client binds them to the
+                        agreement and replaces all already concluded verbal/written agreements on the same subject.
+                    </p>
+                    <p>The client may, however, cancel an order if Teleaders has not yet begun the execution of the
+                        Project. Clients can withdraw by sending an email to … Teleaders may charge a cancellation fee
+                        of …. For all expenses and commitments already made.
+                    </p>
+                    <h4>Services/Implementation Period</h4>
+                    <p>Upon registration with Teleaders, clients will receive notifications of implementation, which are
+                        merely indicative, and not binding to Teleaders. Any delay in delivering the Project does not
+                        entitle the client to compensation, price reduction, or cancellation of the agreement. </p>
+                    <p>If the party explicitly agrees to a binding delivery period, then this period is extended when
+                        the client fails to meet its obligations in providing specific information necessary for the
+                        facilitation of the Project...</p>
+                    <p>The agreement shall be terminated without further notice of default requirement in the event of
+                        the dissolution, apparent incapacity, bankruptcy, or death of the client.</p>
+                    <h4>Restrictions and Responsibilities</h4>
+                    <p>The client will not take into service or hire any of Teleaders’ employees (including terminated
+                        employees less than six months ago) who are attached to the client for the execution of the
+                        client’s projects. Violation gives Teleaders the right to seek compensation for damages from the
+                        client which must be equal to the gross annual salary usually paid by Teleaders to the said
+                        employee(s)</p>
+                    <p>Teleaders cannot be held responsible for any errors made by it or employees except for fraudulent
+                        scenarios. The causes or form of the subject outside of liability including but not limited to
+                        consequential loss such as loss of expected profits, increased operational costs, drop in
+                        turnover, loss of customers, which client or other parties claim to have emanated from
+                        negligence, or error on the part of Teleaders or its employees. </p>
+                    <p>Teleaders’ liability concerning services provides to the client, in any event, is limited to the
+                        refund of the price paid by the client or terminating the service, all of which are solely at
+                        Teleaders’ discretion.</p>
+                    <h4>Confidentiality; Proprietary Rights</h4>
+                    <p>Teleaders acknowledges that all information received from the client remains the property of the
+                        client and will be returned if the sales agreement is terminated as far as there are no
+                        outstanding invoices.</p>
+                    <p>The parties also agree that all products and information, including commercial and technical
+                        information, applications, inventions, as well as professional secrets learned from either
+                        party, even following the termination of the agreement, must remain confidential. All said
+                        properties are only allowed to be used within the execution of the Project.
+                    </p>
+                    <p>The client or receiving party agrees to take reasonable precautions to protect all proprietary
+                        information and not to use it outside the Project or divulge to any third party.</p>
+                    <p>Within the context of products and services rendered, Teleaders processes the data belonging to
+                        contact persons (including end customers) put forward by the customer or generated for the
+                        customer for the purpose of “customer management” that is to create or contact persons with
+                        regards services applied for by the client. The users have the right to access or update their
+                        data in accordance with the GDPR as put forward by the European Parliament on 14 April 2016
+                        (Regulation (EU) 2016/679). The data is only stored during the partnership between Teleaders and
+                        the client.</p>
+                    <h4>Invoicing, Fees, Conditions of Payment</h4>
+                    <p>Proposed fees are calculated based on particular factors as outlined in the proposal by Teleaders
+                        and are subject to a written price quote drawn in advance</p>
+                    <p>Unless explicitly agreed, the client must pay all invoices within 30 days. Notifications of the
+                        dispute must be made within 15 days of receiving the invoice to Teleaders. Under no events, can
+                        a dispute justify suspending or postponing payment.</p>
+                    <p>The person that places the order or request for service is responsible for payment of the
+                        invoices and must do so on/before the expiry date by bank transfer to the Teleaders account.</p>
+                    <p>If a customer does not make payments within (8) days after receiving a warning notification from
+                        Teleaders, the customer owes negligence fee at the interest rate plus a fixed sum of EUR 40 to
+                        account for the cost of debt collection and a fixed-rate compensation damage of 10% of the
+                        invoice amount may also be charged</p>
+                    <p>Teleaders reserves the right to fulfill or suspend all further obligations until the client has
+                        paid all overdue invoices. If the client further delays payment of all sums payable, Teleaders
+                        is entitled to terminate the contract and stop all services in full or part, temporarily or
+                        otherwise, until all financial obligations are fulfilled by the client.</p>
+                    <p>Teleaders are legally entitled to terminate the contract without further notification and with
+                        immediate effect, and the customer will no longer use any of Teleaders products and services.
+                    </p>
+                    <h4>Disclaimer</h4>
+                    <p>Teleaders provides no warranty, representation, or expression that the services or products
+                        supplied will be free from error and that systems may malfunction occasionally. </p>
+                    <p>In occasions of force majeure such as public unrest, strikes, administrative measures and other
+                        unexpected events which is beyond the control of Teleaders, will release Teleaders from any
+                        prior obligations through the duration of the event without any rights to the customer to reduce
+                        fees or provide compensations for damages</p>
+                    <h4>Contact information</h4>
+                    <p>If you wish to express concerns regarding any aspect of this Terms of Service or other general
+                        questions, please contact us by email …
+                    </p>
                 </div>
             </div>
         </section>
@@ -287,19 +243,19 @@
                 </div>
                 <div class="info"> ©2020 Teleaders LTD. All Rights Reserved.</div>
                 <div class="social">
-					<a class="facebook" href="https://www.facebook.com/teleaders/">
-						<img src="./img/_src/contact-icons/fb.svg" alt="teleaders-facebook">
-					</a>
-					<a class="linkedin" href="https://www.linkedin.com/company/teleaders/">
-						<img src="./img/_src/contact-icons/linkedin.svg" alt="teleaders-linkedin">
-					</a>
-					<a class="instagram" href="https://www.instagram.com/teleaders/">
-						<img src="./img/_src/contact-icons/inst.svg" alt="teleaders-instagram">
-					</a>
-					<a class="twitter" href="https://twitter.com/TeleadersLtd">
-						<img src="./img/_src/contact-icons/twitter.svg" alt="teleaders-twitter">
-					</a>
-				</div>
+                    <a class="facebook" href="https://www.facebook.com/teleaders/">
+                        <img src="./img/_src/contact-icons/fb.svg" alt="teleaders-facebook">
+                    </a>
+                    <a class="linkedin" href="https://www.linkedin.com/company/teleaders/">
+                        <img src="./img/_src/contact-icons/linkedin.svg" alt="teleaders-linkedin">
+                    </a>
+                    <a class="instagram" href="https://www.instagram.com/teleaders/">
+                        <img src="./img/_src/contact-icons/inst.svg" alt="teleaders-instagram">
+                    </a>
+                    <a class="twitter" href="https://twitter.com/TeleadersLtd">
+                        <img src="./img/_src/contact-icons/twitter.svg" alt="teleaders-twitter">
+                    </a>
+                </div>
             </div>
         </footer>
     </div>
