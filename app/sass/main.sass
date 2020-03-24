@@ -10,6 +10,9 @@
 	background-color: $green
 html
 	overflow-x: hidden
+::-webkit-scrollbar
+	width: 0px
+	background: transparent
 body
 	font-size: 14px
 	overflow-x: hidden
@@ -385,14 +388,12 @@ section.your-partner
 	max-height: 700px
 	position: relative
 	.needs-img-wrapper
-		height: 120vh
-		max-height: 1000px
-		width: 110vw
-		left: calc((100vw - 1000px) / -2)
+		width: 160vw
+		left: calc((150vw - 1000px) / -2)
 		position: absolute
 		z-index: 5
-		opacity: .5
-		top: -70px
+		opacity: .9
+		top: -700px
 		img
 			width: 100%
 			height: 100%
@@ -1088,11 +1089,12 @@ header.contacts
 			form
 				display: flex
 				flex-direction: column
+				width: 90%
 				input, textarea
 					background: transparent
 					border-radius: 30px
 					height: 40px
-					width: 90%
+					width: 100%
 					margin-top: 20px
 					border: 1px solid $orange
 					padding: 0 20px
@@ -1101,10 +1103,22 @@ header.contacts
 						margin-top: 0
 					&:focus
 						box-shadow: 0px 0px 2px $orange, 0px 0px 6px $orange
-				textarea
-					padding-top: 10px
+				.textarea-wrapper
+					margin-top: 20px
+					border: 1px solid $orange
+					height: 180px
+					padding-top: 20px
 					padding-bottom: 20px
-					overflow: hidden
+					border-radius: 30px
+					textarea
+						border: none
+						resize: none
+						height: 100%
+						&:focus
+							box-shadow: 0px 0px 0px $orange
+					&:focus
+						box-shadow: 0px 0px 2px $orange, 0px 0px 6px $orange
+
 			span.form-label
 				position: relative
 				top: -50px
@@ -1120,6 +1134,7 @@ header.contacts
 					width: 60px
 				&:nth-child(6)
 					width: 80px
+					top: -186px
 			button
 				border-radius: 30px
 				border: none
@@ -1208,5 +1223,9 @@ footer ul li:hover p
 	font-weight: 600
 	line-height: 29px
 	text-align: left
+.service-desc-card > a
+	position: relative
+	top: -100px
+
 @import "media"
 // Always at the end

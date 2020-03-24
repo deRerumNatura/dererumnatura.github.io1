@@ -44,7 +44,7 @@
     .one
         background-position-x: -78px
     section.your-partner .info .img-wrapper
-        width: 450px
+        width: 500px
     /////ABOUT////////
     .about-header .header-content
         margin-top: 0
@@ -81,17 +81,21 @@
     header.contacts .row:nth-child(2) .contact-form
         margin: 30px 0
     header.contacts .row:nth-child(2) .contact-info
-        flex-direction: row
-        justify-content: space-between
+        flex-direction: column
+        justify-content: flex-start
+        padding-bottom: 30px
+        padding-top: 20px
     .phones-social
-        margin-right: 10vw
+        margin-right: 0
         display: flex
         flex-direction: column
         align-items: flex-start
         .telephone
             margin-top: 0!important
+    .form-title
+        margin-bottom: 10px
     .outsouce-needs .needs-img-wrapper
-        left: -10vw
+        top: -550px
     .we-make-pattern-wrapper
         left: -860px
     .services-header
@@ -102,8 +106,23 @@
         height: 800px
     .pain-points
         height: 700px
+    header.contacts .row:nth-child(2) .contact-form button
+        margin-top: 0
 // 992px
 +media-breakpoint-down(md)
+    header.contacts .row:nth-child(2) .contact-form button
+        margin-right: 0
+    header.contacts .row:nth-child(2) .contact-form form
+        width: 100%
+    header.contacts .row:nth-child(2) .contact-info
+        justify-content: space-between
+        flex-direction: row
+        margin-top: 50px
+        .post-info
+            margin-right: 40px
+    .outsouce-needs .needs-img-wrapper
+        top: -450px
+        left: -30vw
     .we-offer-services .col-md-3 .service-card
         height: 160px
     .we-offer-services .row
@@ -317,6 +336,10 @@
         
 // 768px
 +media-breakpoint-down(sm)
+    .outsouce-needs .needs-img-wrapper
+        top: -150px
+        left: -60vw
+        width: 300vw
     .lottie
         top: 0px
         position: relative
@@ -414,6 +437,7 @@
         display: flex
         flex-direction: column
     section.your-partner .info .img-wrapper
+        margin-top: 50px
         max-width: 100%
     section.your-partner .info p
         margin-top: 0
@@ -635,23 +659,23 @@
             justify-content: center
     header.contacts .row:nth-child(2) .contact-info
         display: flex
-        flex-direction: column
+        flex-direction: row
         .post-info
-            font-size: 30px
-            line-height: 40px
+            font-size: 20px
+            line-height: 30px
         .phones-social
-            margin-top: 20px
+            margin-top: 0px
             .phones
                 p
-                    margin-top: 10px
-                    font-size: 30px
+                    margin-top: 5px
+                    font-size: 20px
             .social
-                margin-top: 50px
-                height: 100px
+                margin-top: 10px
+                height: 60px
                 a
                     height: 50%
                     img
-                        margin-right: 50px
+                        margin-right: 30px
     .about-header .header-content p
         margin-top: 20px
     .terms-header
@@ -723,6 +747,10 @@
 
 // 576px
 +media-breakpoint-down(xs)
+    .outsouce-needs .needs-img-wrapper
+        top: 50px
+        left: -60vw
+        width: 300vw
     section.services-desc .service-desc-card .service-desc-pattern-wrapper
         left: 0
     section.services-desc .service-desc-card .visible-desc
@@ -1054,22 +1082,15 @@
         margin-top: 200px
     header.contacts .row:nth-child(2) .contact-info
         .post-info
-            margin-top: 50px
             font-size: 24px
-            line-height: 40px
         .phones-social
-            margin-top: 20px
             .phones
+                margin-top: 40px
                 p
-                    margin-top: 10px
                     font-size: 24px
             .social
                 margin-top: 50px
-                height: 100px
-                a
-                    height: 50%
-                    img
-                        margin-right: 50px
+                height: 70px
     .terms-header
         height: 300px
     .services-header-content .col-md-6 p
@@ -1082,7 +1103,13 @@
             width: 110%
             height: 80%!important
     section.your-partner .info .img-wrapper
-        width: 90%
+        margin-top: 0
+        overflow: hidden
+        width: 100%
+        img
+            position: relative
+            width: 115%
+            left: -40px
     section.our-core-values .row .core-values-wrapper img:nth-child(3)
         width: 620px
     section.our-core-values .row .core-values-wrapper
@@ -1099,13 +1126,35 @@
         width: 500px
     .we-offer-services .col-md-3 .service-card:hover .service-description
         font-size: 11px
+    .outsouce-needs .needs-img-wrapper
+        top: 50px
+        left: -60vw
+        width: 400vw
+    section.your-partner .info .img-wrapper
+        margin-top: 0
+        overflow: hidden
+        width: 100%
+        img
+            position: relative
+            width: 120%
+            left: -30px
 @media only screen and (max-width : 360px)
     section.our-core-values .row .core-values-wrapper img:nth-child(3)
         width: 450px
     section.our-core-values .row .core-values-wrapper
         top: -100px
         left: -90px
-    
+    header.contacts .row:nth-child(2) .contact-info
+        .post-info
+            font-size: 24px
+        .phones-social
+            .phones
+                margin-top: 40px
+                p
+                    font-size: 22px
+            .social
+                margin-top: 50px
+                height: 70px
 @media only screen and (max-width : 330px)
     section.our-core-values .row .core-values-wrapper img:nth-child(3)
         width: 420px

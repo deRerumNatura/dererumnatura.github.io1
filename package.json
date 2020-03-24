@@ -26,6 +26,7 @@
 		"gulp-webserver": "^0.9.1"
 	},
 	"dependencies": {
+		"autosize": "^4.0.2",
 		"dev-ip": "^1.0.1"
 	}
 }
