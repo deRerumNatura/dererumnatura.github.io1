@@ -640,7 +640,7 @@ nav
 		z-index: 1
 		left: -40vw
 		top: -500px
-		opacity: .5
+		opacity: .45
 	.header-content
 		position: relative
 		z-index: 999
@@ -822,6 +822,7 @@ nav
 		top: -3vh
 		width: 45vw
 		opacity: 0
+		z-index: 990
 		img
 			width: 100%
 
@@ -1197,14 +1198,19 @@ header.contacts
 		margin-top: 10vh
 section.terms
 	margin-bottom: 20vh
+	position: relative
+	z-index: 990
 	p
 		font-size: 16px
 		line-height: 25px
 		margin-top: 10px
-		opacity: .8
+		opacity: .9
 	h4
 		font-size: 21px
 		margin-top: 50px
+	h5
+		opacity: .95
+		margin-top: 10px
 
 .lottie
 	display: flex
@@ -1233,5 +1239,9 @@ footer ul li:hover p
 	margin-top: 20px
 	margin-left: -10px
 	margin-bottom: 20px
+section.learn-more-about .invisible *
+	position: relative
+	z-index: 966
+
 @import "media"
 // Always at the end
